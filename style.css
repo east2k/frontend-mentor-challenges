@@ -2,6 +2,8 @@
 
 :root {
     --black-color: #33323d;
+    --light-black-color: #33323dcc;
+    --gray-color: #33323d2e;
     --white-color: #fafafa;
 
     --small-text: 12px;
@@ -17,7 +19,8 @@
     --regular-font-weight: 400;
 
     --standard-img-width: 540px;
-    --standard-img-height: 500px;
+
+    --standard-project-height: 430px;
 
     --main-font: 'Public Sans', sans-serif;
     --side-font: 'Ibarra Real Nova', serif;
@@ -35,4 +38,143 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: var(--black-color);
+}
+
+.page-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: var(--max-width-wrapper);
+    height: 45px;
+    margin: 65px auto;
+}
+
+.page-logo {
+    font-size: var(--big-text);
+    font-weight: var(--header-font-weight);
+    color: var(--black-color);
+}
+
+.page-navigation ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 40px;
+}
+
+.page-navigation ul li a {
+    cursor: pointer;
+    font-size: var(--small-text);
+    font-weight: var(--side-font-weight);
+    color: var(--black-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.main-content {
+    width: 100%;
+    max-width: var(--max-width-wrapper);
+    /* background-color: pink; */
+    margin: auto;
+}
+
+.project-container {
+    height: var(--standard-project-height);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-img {
+    position: relative;
+    width: var(--standard-img-width);
+    height: var(--standard-project-height);
+    background: url("assets/images/project-background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(var(--standard-img-width) - 15%);
+    height: auto;
+}
+
+.project-content {
+    height: var(--standard-project-height);
+    width: 445px;
+    padding: 90px 0;
+    border-top: 1px solid var(--gray-color);
+    border-bottom: 1px solid var(--gray-color);
+}
+
+.project-header {
+    font-family: var(--side-font);
+    font-size: var(--big-text);
+    font-weight: var(--header-font-weight);
+    margin-bottom: var(--small-margin);
+}
+
+.project-description {
+    line-height: 25px;
+    font-weight: var(--regular-font-weight);
+    font-size: var(--regular-text);
+    margin-bottom: var(--small-margin);
+    color: var(--light-black-color);
+}
+
+.project-link-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--small-text);
+    font-weight: var(--side-font-weight);
+    width: 180px;
+    height: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.project-link.site {
+    border: 1px solid var(--light-black-color);
+    transition: 250ms;
+}
+
+.project-link.site:hover {
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+.project-link.challenge {
+    transition: 1s;
+}
+
+.project-link.challenge:hover {
+    border: 1px solid var(--light-black-color);
+}
+
+.project-link.github, .project-link.github img {
+    width: 50px;
+    height: auto;
+    border-bottom: 1px solid transparent;
+}
+
+.project-link.github:hover {
+    border-bottom: 1px solid var(--light-black-color);
 }
