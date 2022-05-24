@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #fb7413;
+
+    --white: #ffffff;
+    --light-grey: #959eac;
+    --medium-grey: #7c8798;
+    --light-dark-blue: #222933;
+    --medium-dark-blue: #252f39;
+    --dark-blue: #171e28;
+    --very-dark-blue: #141519;
+
+    --standard-circle-width: 40px;
+    --standard-circle-height: 40px;
+
+    --section-margin-separator: 23px;
+
+    --max-width-wrapper: 1440px;
+
+    --regular-font-size: 12px;
+}
+
+* {
+    font-family: 'Overpass', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.rating-background {
+    margin: auto;
+    width: 100%;
+    max-width: var(--max-width-wrapper);
+    background-color: var(--very-dark-blue);
+    height: 100vh;
+    max-height: 960px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating-wrapper {
+    background: linear-gradient(to bottom, var(--light-dark-blue), var(--dark-blue));
+    border-radius: 25px;
+    width: 325px;
+    height: 325px;
+}
+
+.rating-wrapper.rating-state {
+    display: none;
+}
+
+.rating-wrapper.rating-state.active {
+    display: block;
+}
+
+
+.rating-container {
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+}
+
+.rating-logo {
+    width: 100%;
+    margin-bottom: var(--section-margin-separator);
+}
+
+.logo-container {
+    background-color: var(--medium-dark-blue);
+    width: var(--standard-circle-width);
+    height: var(--standard-circle-height);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container img {
+    width: 15px;
+    height: 15px;
+}
+
+.rating-body {
+    width: 100%;
+    margin-bottom: var(--section-margin-separator);
+}
+
+.rating-body h2 {
+    color: var(--white);
+    margin-bottom: 7px;
+    font-size: 22px;
+}
+
+.rating-body p {
+    font-size: var(--regular-font-size);
+    color: var(--light-grey);
+    line-height: 19px;
+}
+
+.rating-list {
+    width: 100%;
+    margin-bottom: 23px;
+}
+
+.rating-list ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-list ul li {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light-grey);
+    font-size: var(--regular-font-size);
+    background-color: var(--medium-dark-blue);
+    border-radius: 50%;
+    width: var(--standard-circle-width);
+    height: var(--standard-circle-height);
+}
+
+.rating-list ul li:hover {
+    color: var(--white);
+    background-color: var(--light-grey);
+}
+
+.rating-list ul li.selected {
+    color: var(--white);
+    background-color: var(--primary-color);
+}
+
+.rating-submit {
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 100%;
+    height: 35px;
+    border-radius: 25px;
+    border: none;
+    letter-spacing: 2px;
+    font-size: var(--regular-font-size);
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.rating-submit:active {
+    background-color: var(--white);
+    color: var(--primary-color);
+}
+
+.rating-wrapper.thank-you-state {
+    display: none;
+}
+
+.rating-wrapper.thank-you-state.active {
+    display: flex;
+}
+
+.rating-container.thank-you-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 35px 25px 35px 25px;
+}
+
+.rating-body.thank-you-state {
+    text-align: center;
+}
+
+.rating-img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--section-margin-separator);
+}
+
+.rating-img img {
+    width: auto;
+    height: 95px;
+}
+
+.rating-status {
+    background-color: var(--light-dark-blue);
+    color: var(--primary-color);
+    font-size: var(--regular-font-size);
+    height: 25px;
+    width: 160px;
+    text-align: center;
+    margin-bottom: var(--section-margin-separator);
+    border-radius: 25px;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 375px) {
+    .rating-status {
+        font-size: calc(var(--regular-font-size) + 2px);
+        line-height: 23px;
+        height: 30px;
+    }
+
+    .rating-body p {
+        font-size: calc(var(--regular-font-size) + 2px);
+    }
+}

@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --pale-bright-blue: hsla(245, 75%, 52%, 0.75);
+
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+
+    --regular-text: 16px;
+    --mobile-text: 13px;
+
+    --max-width-wrapper: 1440px;
+    --min-width-wrapper: 375px;
+
+    --margin-section-divider: 15px;
+
+}
+
+* {
+    font-family: 'Red Hat Display', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.order-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: var(--max-width-wrapper);
+    height: 100vh;
+    max-height: 960px;
+    margin: auto;
+    background: linear-gradient(to bottom, hsl(224deg 52% 81% / 40%), hsl(224deg 100% 94%)),
+        url("images/pattern-background-desktop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.order-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 440px;
+    height: 670px;
+    background-color: var(--very-pale-blue);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 15px 50px -25px hsl(245deg 75% 52% / 30%);
+}
+
+.order-header-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.order-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-body {
+    text-align: center;
+    margin-bottom: calc(var(--margin-section-divider) + 10px);
+    width: 75%;
+}
+
+.order-body h1 {
+    color: var(--dark-blue);
+    margin-bottom: var(--margin-section-divider);
+    font-weight: 900;
+    font-size: 27px;
+}
+
+.order-body p {
+    color: var(--desaturated-blue);
+    font-size: var(--regular-text);
+}
+
+.order-price-plan, .order-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.order-price-plan {
+    background-color: hsl(224deg 52% 81% / 10%);
+    padding: 0 20px;
+    width: 80%;
+    height: 90px;
+    border-radius: 10px;
+    margin-bottom: calc(var(--margin-section-divider) + 10px);
+}
+
+.order-details {
+    gap: 15px;
+}
+
+.order-type {
+    font-weight: 900;
+    color: var(--dark-blue);
+    font-size: var(--regular-text);
+    margin-bottom: 3px;
+}
+
+.order-price {
+    color: var(--desaturated-blue);
+}
+
+.order-price::before {
+    content: '$';
+}
+
+.order-price::after {
+    content: '/year';
+}
+
+.order-change {
+    font-size: var(--regular-text);
+    text-decoration: underline;
+    font-weight: 700;
+    color: var(--bright-blue);
+}
+
+.order-change:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--pale-bright-blue);
+}
+
+.order-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    gap: 15px;
+}
+
+.order-buttons button {
+    cursor: pointer;
+    width: 100%;
+    height: 55px;
+    font-size: var(--regular-text);
+    font-weight: 700;
+    border-radius: 15px;
+    border-style: none;
+}
+
+.active-button {
+    background-color: var(--bright-blue);
+    color: var(--pale-blue);
+    box-shadow: 0px 10px 20px hsl(245deg 75% 52% / 30%);
+}
+
+.active-button:hover {
+    background-color: var(--pale-bright-blue);
+}
+
+.inactive-button {
+    background-color: transparent;
+    color: var(--desaturated-blue);
+}
+
+.inactive-button:hover {
+    color: var(--dark-blue);
+}
+
+@media only screen and (max-width: 375px) {
+
+    .order-wrapper{
+        background: linear-gradient(to bottom, hsl(224deg 52% 81% / 40%), hsl(224deg 100% 94%)),
+            url("images/pattern-background-mobile.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .order-container {
+        width: 300px;
+        height: 500px;
+    }
+
+    .order-header-img {
+        margin-bottom: 15px;
+    }
+
+    .order-header-img img {
+        width: 100%;
+    }
+
+    .order-body h1 {
+        font-size: 25px;
+    }
+
+    .order-body p {
+        font-size: var(--mobile-text);
+        line-height: 20px;
+    }
+
+    .order-price-plan {
+        height: 60px;
+        padding: 0 10px;
+        width: 85%;
+    }
+
+    .order-type, .order-price, .order-change {
+        font-size: var(--mobile-text);
+    }
+
+    .order-buttons {
+        width: 85%;
+    }
+    .order-buttons button{
+        font-size: var(--mobile-text);
+        height: 45px;
+    }
+}
