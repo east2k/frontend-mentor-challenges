@@ -84,12 +84,19 @@
 }
 
 .card-button {
+    cursor: pointer;
     font-size: var(--regular-text-size);
     font-weight: var(--normal-font-weight);
     width: 145px;
     height: 50px;
     border-radius: 50px;
     border: none;
+}
+
+.card-button:hover{
+    color: var(--very-light-gray) !important;
+    background-color: transparent;
+    border: 1px solid var(--very-light-gray);
 }
 
 .card-button.first {
@@ -114,4 +121,31 @@
 
 .card.third {
     background-color: var(--very-dark-cyan);
+}
+
+@media only screen and (max-width: 375px){
+    .page-wrapper{
+        align-items: flex-start;
+        height: 1500px;
+        max-height: none;
+    }
+    
+    .card-container{
+        flex-direction: column;
+        height: auto;
+        width: 325px;
+        margin-top: 85px;
+    
+    }
+
+    .card{
+        width: 325px;
+        height: 443px;
+    }
+
+    .card-body{
+        margin-bottom: 20px;
+        width: 225px;
+    }
+
 }
