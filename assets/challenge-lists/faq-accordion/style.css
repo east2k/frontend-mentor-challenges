@@ -136,21 +136,25 @@
     position: relative;
     width: 350px;
     height: 0;
-    /* padding-bottom: 0px; */
     transition: 150ms;
-    display: none;
-    /* transform: translate(0%, -50%) scaleY(0); */
+    /* display: none; */
+    transform: translate(0%, -50%) scaleY(0);
 }
 
 .item-container.active .item-answer{
-    display: block;
+    /* display: block; */
     height: auto;
-    /* transform: translate(0%, 0%) scaleY(1); */
+    transform: translate(0%, 0%) scaleY(1);
+    padding-bottom: 15px;
+}
+
+.item-container.active .item-answer p{
+    display: block;
 }
 
 .item-answer p {
+    display: none;
     font-size: var(--regular-font-size);
     font-weight: var(--regular-font-weight);
     line-height: 20px;
-    padding-bottom: 15px;
 }
