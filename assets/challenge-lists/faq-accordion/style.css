@@ -78,7 +78,6 @@
 }
 
 .illustration-background {
-    display: block;
     position: absolute;
     z-index: 0;
     width: 60em;
@@ -88,6 +87,10 @@
 }
 
 .illustration-background.desktop {
+    display: block;
+}
+
+.illustration-background.mobile {
     display: none;
 }
 
@@ -123,6 +126,7 @@
 }
 
 .item-container.active {
+    padding-bottom: 15px;
     height: auto;
 }
 
@@ -135,6 +139,8 @@
 }
 
 .item-question {
+    font-size: var(--regular-font-size);
+    font-weight: var(--regular-font-weight);
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -161,7 +167,6 @@
 .item-container.active .item-answer {
     height: auto;
     transform: translate(0%, 0%) scaleY(1);
-    padding-bottom: 15px;
 }
 
 .item-container.active .item-answer p {
