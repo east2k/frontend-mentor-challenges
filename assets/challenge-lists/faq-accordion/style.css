@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    /* Wrapper */
+    --max-width-wrapper: 1440px;
+
+    /* Colors */
+
+    --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --soft-red: hsl(14, 88%, 65%);
+
+    --soft-violet: hsl(273, 75%, 66%);
+    --soft-blue: hsl(240, 73%, 65%);
+
+    --very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --dark-grayish-blue: hsl(240, 6%, 50%);
+
+    --light-grayish-blue: hsl(240, 5%, 91%);
+
+    --white: #fff;
+
+    /* Font Size */
+    --regular-font-size: 13px;
+
+    /* Font Weight */
+    --regular-font-weight: 400;
+    --medium-font-weight: 700;
+}
+
+* {
+    font-family: 'Kumbh Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.page-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: var(--max-width-wrapper);
+    height: 100vh;
+    max-height: 960px;
+    background: linear-gradient(180deg, var(--soft-violet), var(--soft-blue));
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    width: 925px;
+    height: 500px;
+    background-color: var(--white);
+    border-radius: 25px;
+}
+
+.card-content {
+    position: relative;
+    width: 50%;
+}
+
+.card-illustration {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.hide-overflow {
+    position: relative;
+}
+
+.illustration-woman {
+    position: absolute;
+    z-index: 1;
+    top: 4em;
+    left: -5.5em;
+}
+
+.illustration-background {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    width: 60em;
+    height: auto;
+    top: -18em;
+    left: -36em;
+}
+
+.illustration-background.desktop {
+    display: none;
+}
+
+.illustration-box {
+    position: absolute;
+    z-index: 2;
+    left: -6em;
+    top: 12.2em;
+    transition: left 250ms;
+}
+
+.illustration-box.hovered {
+    left: -8em;
+}
+
+.card-content.questions {
+    padding: 60px 15px;
+}
+
+.card-header {
+    font-weight: var(--medium-font-weight);
+    margin-bottom: 15px
+}
+
+.card-body {
+    width: 375px;
+
+}
+
+.item-container {
+    position: relative;
+    border-bottom: 1px solid var(--light-grayish-blue);
+}
+
+.item-container.active {
+    height: auto;
+}
+
+.item-container img {
+    transition: 250ms;
+}
+
+.item-container.active img {
+    transform: rotate(180deg);
+}
+
+.item-question {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 2px;
+}
+
+.item-question:hover {
+    color: var(--soft-red);
+}
+
+.item-container.active .item-question {
+    font-weight: var(--medium-font-weight);
+}
+
+.item-answer {
+    position: relative;
+    width: 350px;
+    height: 0;
+    transition: 150ms;
+    transform: translate(0%, -50%) scaleY(0);
+}
+
+.item-container.active .item-answer {
+    height: auto;
+    transform: translate(0%, 0%) scaleY(1);
+    padding-bottom: 15px;
+}
+
+.item-container.active .item-answer p {
+    display: block;
+}
+
+.item-answer p {
+    display: none;
+    color: var(--dark-grayish-blue);
+    font-size: var(--regular-font-size);
+    font-weight: var(--regular-font-weight);
+    line-height: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .page-wrapper {
+        height: 100%;
+    }
+
+    .card-container {
+        flex-direction: column;
+        width: 330px;
+        height: auto;
+        margin: 10em 0 5em 0;
+    }
+
+    .card-body {
+        width: 275px;
+    }
+
+    .illustration-background.mobile {
+        display: block;
+    }
+
+    .illustration-background.desktop {
+        display: none;
+    }
+
+    .illustration-woman, .illustration-background {
+        width: 250px;
+    }
+
+    .illustration-woman {
+        top: -7.5em;
+        left: 2em;
+    }
+
+    .illustration-background {
+        top: 0em;
+        left: 2em;
+    }
+
+    .illustration-box {
+        left: 1.5em;
+        top: -3em;
+        width: 6em;
+    }
+
+    .illustration-box.hovered {
+        left: 0.55em;
+    }
+
+    .card-illustration {
+        overflow: visible;
+        height: 70px;
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .item-question {
+        font-size: var(--regular-font-size);
+    }
+
+    .item-answer {
+        width: inherit;
+    }
+}
