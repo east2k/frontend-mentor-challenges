@@ -102,7 +102,7 @@
 
 .card-header {
     font-weight: var(--medium-font-weight);
-    margin-bottom: 30px
+    margin-bottom: 15px
 }
 
 .card-body {
@@ -111,23 +111,46 @@
 }
 
 .item-container {
+    position: relative;
     border-bottom: 1px solid var(--light-grayish-blue);
+    /* height: 50px; */
+}
+
+.item-container.active{
+    height: auto;
 }
 
 .item-question {
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px 2px;
 }
 
-.item-question.active {
+.item-container.active .item-question {
     font-weight: var(--medium-font-weight);
 }
 
 .item-answer {
+    position: relative;
     width: 350px;
+    height: 0;
+    /* padding-bottom: 0px; */
+    transition: 150ms;
+    display: none;
+    /* transform: translate(0%, -50%) scaleY(0); */
+}
+
+.item-container.active .item-answer{
+    display: block;
+    height: auto;
+    /* transform: translate(0%, 0%) scaleY(1); */
+}
+
+.item-answer p {
     font-size: var(--regular-font-size);
     font-weight: var(--regular-font-weight);
+    line-height: 20px;
     padding-bottom: 15px;
 }
