@@ -132,6 +132,9 @@
     font-size: var(--big-text);
     font-weight: var(--header-font-weight);
     margin-bottom: var(--small-margin);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .project-description {
