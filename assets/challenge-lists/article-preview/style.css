@@ -3,15 +3,18 @@
 :root {
     --max-width-wrapper: 1440px;
 
-    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
     --desaturated-dark-blue: hsl(214, 17%, 51%);
     --grayish-blue: hsl(212, 23%, 69%);
     --light-grayish-blue: hsl(210, 46%, 95%);
+    --white: #fff;
 
     --regular-font-size: 13px;
 
     --regular-font-weight: 500;
     --medium-font-weight: 700;
+
+    --margin-separator: 15px;
 }
 
 * {
@@ -21,3 +24,104 @@
     box-sizing: border-box;
 }
 
+.page-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: var(--max-width-wrapper);
+    height: 100vh;
+    max-height: 960px;
+    margin: auto;
+    background-color: var(--light-grayish-blue);
+}
+
+.component-container {
+    width: 725px;
+    height: 280px;
+    border-radius: 10px;
+    background-color: var(--white);
+    box-shadow: 0px 13px 56px -30px hsl(212deg 23% 69%);
+}
+
+.component-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.component-image {
+    width: 300px;
+    height: 280px;
+    overflow: hidden;
+}
+
+.component-image img {
+    width: 350px;
+    height: auto;
+    filter: brightness(1.05);
+}
+
+.component-body {
+    width: 65%;
+    padding: 35px 40px;
+
+}
+
+.component-header{
+    font-size: calc(var(--regular-font-size) + 8px);
+    color: var(--very-dark-grayish-blue);
+    font-weight: var(--medium-font-weight);
+    margin-bottom: var(--margin-separator);
+}
+
+.component-paragraph{
+    font-size: var(--regular-font-size);
+    color: var(--desaturated-dark-blue);
+    margin-bottom: var(--margin-separator);
+}
+
+.profile-container, .profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile-container{
+    justify-content: space-between;
+    height: 50px;
+}
+
+.profile-image {
+    width: auto;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.profile-details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2px;
+}
+
+.profile-name{
+    color: var(--very-dark-grayish-blue);
+}
+
+.profile-date{
+    color: var(--grayish-blue);
+    font-size: var(--regular-font-size);
+}
+
+.share-icon{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: var(--light-grayish-blue);
+    border-radius: 50%;
+}
