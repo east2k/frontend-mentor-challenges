@@ -67,14 +67,14 @@
 
 }
 
-.component-header{
+.component-header {
     font-size: calc(var(--regular-font-size) + 8px);
     color: var(--very-dark-grayish-blue);
     font-weight: var(--medium-font-weight);
     margin-bottom: var(--margin-separator);
 }
 
-.component-paragraph{
+.component-paragraph {
     font-size: var(--regular-font-size);
     color: var(--desaturated-dark-blue);
     margin-bottom: var(--margin-separator);
@@ -86,7 +86,8 @@
     align-items: center;
 }
 
-.profile-container{
+.profile-container {
+    position: relative;
     justify-content: space-between;
     height: 50px;
 }
@@ -98,7 +99,7 @@
     margin-right: 15px;
 }
 
-.profile-details{
+.profile-details {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -106,22 +107,95 @@
     gap: 2px;
 }
 
-.profile-name{
+.profile-name {
     color: var(--very-dark-grayish-blue);
 }
 
-.profile-date{
+.profile-date {
     color: var(--grayish-blue);
     font-size: var(--regular-font-size);
 }
 
-.share-icon{
+.share-icon {
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
+    color: var(--very-dark-grayish-blue);
     background: var(--light-grayish-blue);
     border-radius: 50%;
+}
+
+.share-icon.active {
+    background: var(--very-dark-grayish-blue);
+}
+
+.share-icon.active svg path {
+    fill: var(--light-grayish-blue);
+}
+
+.share-icon:hover {
+    background: var(--very-dark-grayish-blue);
+}
+
+.share-icon:hover svg path {
+    fill: var(--light-grayish-blue);
+}
+
+.share-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: var(--very-dark-grayish-blue);
+    width: 250px;
+    height: 55px;
+    right: -108px;
+    top: -50px;
+    border-radius: 10px;
+    z-index: 1;
+    transition: 150ms;
+    /* transform: translate(0%, 0%) scaleY(1); */
+    transform: translate(0%, 65%) scale(0);
+}
+
+.share-option.active {
+    top: -80px;
+    transform: translate(0%, 0%) scale(1);
+}
+
+.share-option::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: var(--very-dark-grayish-blue);
+    bottom: -5px;
+    right: 40%;
+    transform: rotate(45deg);
+    z-index: -1;
+
+}
+
+.share-option span {
+    font-size: var(--regular-font-size);
+    color: var(--grayish-blue);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-right: 20px;
+}
+
+.icon-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90px;
+}
+
+.icon-list a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
