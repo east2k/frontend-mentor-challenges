@@ -98,16 +98,26 @@
 
 .section-email-input {
     font-size: var(--regular-font-size);
-    padding: 5px 30px;
+    padding: 5px 140px 5px 30px;
     width: inherit;
     height: inherit;
     color: var(--desaturated-red);
     background-color: transparent;
     border-radius: 50px;
-    border: 1px solid var(--desaturated-red);
+    transition: 150ms;
+    border: 3px solid var(--desaturated-red);
+    outline: none;
 }
 
-.section-input-container.active .section-email-input {
+.section-email-input:focus {
+    border: 3px solid hsl(0, 93%, 88%);
+}
+
+.section-input-container.success .section-email-input {
+    border-color: var(--desaturated-red);
+}
+
+.section-input-container.error .section-email-input {
     border-color: var(--soft-red);
 }
 
@@ -127,12 +137,7 @@
     box-shadow: 0px 6px 17px -8px var(--soft-red);
 }
 
-.section-button:active {
-    background: hsl(0, 93%, 88%);
-    box-shadow: 0px 3px 38px -9px rgb(254, 81, 81);
-}
-
-.section-input-container.active .section-button {
+.section-input-container.error .section-button {
     background: hsl(0, 93%, 88%);
     box-shadow: 0px 3px 38px -9px rgb(254, 81, 81);
 }
@@ -141,24 +146,36 @@
     position: absolute;
     transition: 150ms;
     top: 15px;
-    right: 70px;
+    right: 100px;
     z-index: -1;
 
 }
 
-.section-input-container.active .error-icon {
+.section-input-container.error .error-icon {
     right: 110px;
     z-index: 1;
 }
 
-.input-reminder {
+.reminder {
     position: absolute;
-    display: none;
+    transition: 150ms;
     left: 30px;
-    bottom: -25px;
-    color: var(--soft-red);
+    bottom: -5px;
+    z-index: -1;
 }
 
-.section-input-container.active .input-reminder {
-    display: block;
+.section-input-container.error .reminder.error {
+    color: var(--soft-red);
+    bottom: -25px;
+    z-index: 1;
+}
+
+.section-input-container.success .reminder.success {
+    color: var(--desaturated-red);
+    bottom: -25px;
+    z-index: 1;
+}
+
+@media only screen and (max-width:425px) {
+    
 }
