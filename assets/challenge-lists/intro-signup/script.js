@@ -9,7 +9,7 @@ const validEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0
 
 signButton.addEventListener('click', () => {
     for (let i = 0; i < signInput.length; i++) {
-        if (signInput[i].value === "") {
+        if (signInput[i].value === '') {
             signInputContainer[i].classList.add("active");
             signInputContainer[i].classList.remove("email-error");
             signButton.classList.add("active");

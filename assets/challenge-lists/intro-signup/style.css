@@ -216,6 +216,7 @@
 }
 
 .input-reminder.email,
+.signup-input-container.email-error .input-reminder,
 .signup-input-container.active .input-reminder.email {
     display: none;
     height: 0;
@@ -240,5 +241,65 @@
     right: 25px;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 768px) {
+    .page-wrapper {
+        height: auto;
+        background: linear-gradient(hsl(0, 100%, 74%), hsl(0deg 100% 74% / 95%)), url(images/bg-intro-mobile.png);
+    }
+
+    .page-container {
+
+        margin: 70px 0;
+        width: 97%;
+    }
+
+    .page-content {
+        flex-direction: column;
+    }
+
+    .page-divider {
+        width: 100%;
+    }
+
+    .page-divider.banner {
+        margin-bottom: 30px;
+    }
+
+    .page-divider.banner h1 {
+        font-size: 27px;
+        line-height: 35px;
+        text-align: center;
+        margin-bottom: 25px;
+        width: 100%;
+    }
+
+    .page-divider.banner p {
+        text-align: center;
+        font-weight: var(--semi-font-weight);
+    }
+
+    .special-offer {
+        padding: 20px 50px;
+        line-height: 25px;
+        height: 85px;
+    }
+
+    .signup-container {
+        padding: 25px;
+        min-height: 0;
+    }
+
+    .signup-input-container {
+        margin-bottom: 20px;
+    }
+
+    .signup-input {
+        padding-left: 20px;
+        border-radius: 3px;
+    }
+
+    .signup-tos {
+        text-align: center;
+        width: 85%;
+    }
 }
