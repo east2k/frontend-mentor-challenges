@@ -145,7 +145,6 @@
     outline: 3px solid var(--red);
 }
 
-
 .signup-input:focus {
     outline: 3px solid var(--grayish-blue);
 }
@@ -155,6 +154,7 @@
 }
 
 .signup-button {
+    position: relative;
     cursor: pointer;
     width: 100%;
     height: 55px;
@@ -170,6 +170,25 @@
     box-shadow: 0px 3px 0px hsl(154deg 58% 42%);
 }
 
+.signup-button.active {
+    opacity: 0.7;
+}
+
+.signup-success {
+    position: absolute;
+    color: var(--green);
+    font-size: var(--regular-font-size);
+    top: 0;
+    right: 0;
+    transform: scaleY(0);
+    transition: 150ms;
+}
+
+.signup-success.active {
+    top: -25px;
+    transform: scaleY(1);
+}
+
 .signup-tos {
     font-size: calc(var(--regular-font-size) - 5px);
     color: var(--grayish-blue);
@@ -182,28 +201,28 @@
 }
 
 .input-reminder {
+    display: none;
     font-size: calc(var(--regular-font-size) - 5px);
     margin: 7px 0 0;
     float: right;
     color: var(--red);
     height: 0;
-    transform: translate(0, -50%) scaleY(0);
     transition: 150ms;
 }
 
 .signup-input-container.active .input-reminder {
-    transform: translate(0, 0) scaleY(1);
+    display: block;
     height: auto;
 }
 
 .input-reminder.email,
 .signup-input-container.active .input-reminder.email {
-    transform: translate(113%, -50%) scaleY(0);
+    display: none;
     height: 0;
 }
 
 .signup-input-container.email-error .input-reminder.email {
-    transform: translate(113%, 0) scaleY(1);
+    display: block;
     height: auto;
 }
 
@@ -219,4 +238,7 @@
 .signup-input-container.active .input-error, .signup-input-container.email-error .input-error {
     transform: scale(1);
     right: 25px;
+}
+
+@media only screen and (max-width: 375px) {
 }
