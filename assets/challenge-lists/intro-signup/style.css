@@ -33,8 +33,7 @@
     justify-content: center;
     width: 100%;
     max-width: var(--max-width-wrapper);
-    height: 100vh;
-    max-height: 800px;
+    height: 795px;
     margin: auto;
     background: linear-gradient(hsl(0, 100%, 74%), hsl(0deg 100% 74% / 95%)), url(images/bg-intro-desktop.png);
     background-repeat: no-repeat;
@@ -45,6 +44,7 @@
 .page-container {
     width: 80%;
     height: 70%;
+    min-height: 650px;
 }
 
 .page-content {
@@ -82,6 +82,10 @@
 
 .page-divider.signup {
     padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .special-offer {
@@ -110,22 +114,37 @@
     justify-content: flex-start;
     background-color: var(--white);
     border-radius: 10px;
-    height: 475px;
+    width: 100%;
+    height: auto;
+    min-height: 475px;
     padding: 40px;
     box-shadow: 0px 8px 1px hsl(249deg 10% 26% / 20%);
+}
+
+.signup-input-container {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 20px;
 }
 
 .signup-input {
     width: 100%;
     height: 55px;
-    margin-bottom: 20px;
     outline: 1px solid #b9b6d380;
     border-radius: 8px;
     border: none;
-    padding: 0 30px;
+    padding: 0 50px 0 30px;
     font-weight: var(--bold-font-weight);
     color: var(--dark-blue);
+    z-index: 1;
 }
+
+.signup-input-container.active .signup-input,
+.signup-input-container.email-error .signup-input {
+    outline: 3px solid var(--red);
+}
+
 
 .signup-input:focus {
     outline: 3px solid var(--grayish-blue);
@@ -160,4 +179,44 @@
     color: var(--red);
     text-decoration: none;
     font-weight: var(--bold-font-weight);
+}
+
+.input-reminder {
+    font-size: calc(var(--regular-font-size) - 5px);
+    margin: 7px 0 0;
+    float: right;
+    color: var(--red);
+    height: 0;
+    transform: translate(0, -50%) scaleY(0);
+    transition: 150ms;
+}
+
+.signup-input-container.active .input-reminder {
+    transform: translate(0, 0) scaleY(1);
+    height: auto;
+}
+
+.input-reminder.email,
+.signup-input-container.active .input-reminder.email {
+    transform: translate(113%, -50%) scaleY(0);
+    height: 0;
+}
+
+.signup-input-container.email-error .input-reminder.email {
+    transform: translate(113%, 0) scaleY(1);
+    height: auto;
+}
+
+.input-error {
+    position: absolute;
+    transform: scale(0);
+    right: 0;
+    top: 15px;
+    transition: 150ms;
+}
+
+
+.signup-input-container.active .input-error, .signup-input-container.email-error .input-error {
+    transform: scale(1);
+    right: 25px;
 }
