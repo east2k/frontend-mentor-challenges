@@ -95,6 +95,7 @@
     color: var(--light-red);
     transition: 150ms;
     z-index: -1;
+    font-style: italic;
 }
 
 .input-reminder.success {
@@ -175,6 +176,14 @@
     border-radius: 50%;
 }
 
+.social-media a:hover {
+    background-color: var(--blue);
+}
+
+.social-media a:hover path {
+    fill: var(--white);
+}
+
 .social-media a svg {
     position: relative;
     top: 50%;
@@ -191,4 +200,73 @@
 .page-footer p {
     font-size: var(--small-font-size);
     color: var(--gray);
+}
+
+@media only screen and (max-width: 900px) {
+    .page-container {
+        width: 75%;
+    }
+
+    .page-content {
+        padding: 85px 0 40px;
+    }
+
+    .page-logo {
+        width: auto;
+        height: 16px;
+        margin-bottom: 40px;
+    }
+
+    .main-header {
+        text-align: center;
+        font-size: calc(var(--medium-font-size) + 2px);
+        margin-bottom: 17px;
+    }
+
+    .side-header {
+        font-size: var(--small-font-size);
+        margin-bottom: 32px;
+    }
+
+    .page-input {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+
+    .input-reminder {
+        left: 50%;
+        bottom: 63px;
+        transform: translateX(-50%) scaleY(0);
+        font-size: calc(var(--small-font-size) - 2px);
+        white-space: nowrap;
+    }
+
+    .page-input.active .input-reminder.error,
+    .page-input.success .input-reminder.success {
+        left: 50%;
+        bottom: 63px;
+        transform: translateX(-50%) scaleY(1);
+    }
+
+    .page-input.active .email-input,
+    .page-input.success .email-input {
+        margin-bottom: 31px;
+    }
+
+    .email-input, .notify-button {
+        width: 100%;
+        height: 40px;
+        font-size: var(--small-font-size);
+        transition: 150ms;
+    }
+
+    .page-illustration {
+        width: 115%;
+        margin-bottom: 100px;
+    }
+
+    .page-footer p{
+        font-size: calc(var(--small-font-size) - 2px);
+    }
 }
