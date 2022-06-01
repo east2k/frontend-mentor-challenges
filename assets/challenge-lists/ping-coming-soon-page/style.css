@@ -10,6 +10,7 @@
     --very-dark-blue: hsl(209, 33%, 12%);
     --white: #fff;
 
+    --small-font-size: 12px;
     --regular-font-size: 16px;
     --medium-font-size: 20px;
 
@@ -74,6 +75,7 @@
 }
 
 .page-input {
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -82,6 +84,19 @@
     height: 75px;
     gap: 15px;
     margin-bottom: 70px;
+}
+
+.input-error-reminder {
+    display: none;
+    position: absolute;
+    left: 90px;
+    bottom: -5px;
+    font-size: var(--small-font-size);
+    color: var(--light-red);
+}
+
+.page-input.active .input-error-reminder {
+    display: block;
 }
 
 .email-input {
@@ -93,11 +108,16 @@
     font-size: var(--regular-font-size);
 }
 
+.page-input.active .email-input {
+    border-color: var(--light-red);
+}
+
 .email-input::placeholder {
     color: hsla(224, 33%, 80%, 0.70);
 }
 
 .notify-button {
+    cursor: pointer;
     width: 200px;
     height: 55px;
     border: none;
@@ -107,6 +127,11 @@
     font-size: var(--regular-font-size);
     font-weight: var(--medium-font-weight);
     box-shadow: 0px 5px 30px -6px hsl(223deg 100% 80%)
+}
+
+.page-input.active .notify-button,
+.notify-button:hover {
+    background-color: hsl(223, 79%, 69%);
 }
 
 .page-illustration {
@@ -154,7 +179,7 @@
     fill: var(--blue);
 }
 
-.page-footer p{
-    font-size: calc(var(--regular-font-size) - 4px);
+.page-footer p {
+    font-size: var(--small-font-size);
     color: var(--gray);
 }
