@@ -86,17 +86,26 @@
     margin-bottom: 70px;
 }
 
-.input-error-reminder {
-    display: none;
+.input-reminder {
     position: absolute;
     left: 90px;
-    bottom: -5px;
+    bottom: 0;
+    transform: scaleY(0);
     font-size: var(--small-font-size);
     color: var(--light-red);
+    transition: 150ms;
+    z-index: -1;
 }
 
-.page-input.active .input-error-reminder {
-    display: block;
+.input-reminder.success {
+    color: var(--blue);
+}
+
+.page-input.success .input-reminder.success,
+.page-input.active .input-reminder.error {
+    bottom: -5px;
+    transform: scaleY(1);
+    z-index: 1;
 }
 
 .email-input {
