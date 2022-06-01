@@ -10,6 +10,7 @@
     --regular-font-weight: 400;
     --bold-font-weight: 600;
 
+    --small-font-size: 12px;
     --regular-font-size: 18px;
     --big-font-size: 40px;
 
@@ -70,12 +71,12 @@
     color: var(--white);
 }
 
-.page-banner h1{
+.page-banner h1 {
     font-size: 40px;
     margin-bottom: 20px;
 }
 
-.page-banner p{
+.page-banner p {
     font-family: var(--opensans-font-family);
     font-size: var(--regular-font-size);
     color: #ffffffab;
@@ -83,7 +84,8 @@
     margin-bottom: 22px;
 }
 
-.banner-button{
+.banner-button {
+    cursor: pointer;
     font-size: var(--regular-font-size);
     color: var(--violet);
     width: 200px;
@@ -93,7 +95,12 @@
     box-shadow: 0px 8px 21px -11px hsl(257deg 100% 10%);
 }
 
-.social-media{
+.banner-button:hover {
+    color: var(--white);
+    background-color: var(--soft-magenta);
+}
+
+.social-media {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -104,15 +111,14 @@
     height: 60px;
 }
 
-.social-media a{
+.social-media a {
     border: 1px solid var(--white);
     border-radius: 50%;
     width: 40px;
     height: 40px;
 }
 
-
-.social-media a svg{
+.social-media a svg {
     position: relative;
     top: 50%;
     left: 50%;
@@ -123,4 +129,96 @@
 
 .social-media a svg path {
     fill: var(--white);
+}
+
+.social-media a:hover {
+    border-color: var(--soft-magenta);
+}
+
+.social-media a:hover path {
+    fill: var(--soft-magenta);
+}
+
+@media only screen and (max-width: 1205px) {
+    .page-wrapper {
+        background: var(--violet) url('images/bg-mobile.svg') no-repeat;
+        max-height: 1250px;
+    }
+
+    .page-container {
+        width: 85%;
+        padding: 31px 7px;
+    }
+
+    .page-logo {
+        height: 32px;
+        margin-bottom: 55px;
+    }
+
+    .page-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .page-illustration {
+        margin-bottom: 60px;
+    }
+
+    .page-illustration img {
+        height: 215px;
+    }
+
+    .page-illustration,
+    .page-banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .page-banner h1 {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+
+    .page-banner p {
+        font-size: calc(var(--regular-font-size) - 2px);
+        text-align: center;
+        line-height: 24px;
+    }
+
+    .banner-button {
+        width: 205px;
+        height: 40px;
+        font-size: var(--small-font-size);
+        margin-bottom: 40px;
+    }
+
+    .social-media {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .social-media a {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social-media a svg {
+        width: auto;
+        height: 13px;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
 }
