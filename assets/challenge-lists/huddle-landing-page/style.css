@@ -5,9 +5,13 @@
 
     --violet: hsl(257, 40%, 49%);
     --soft-magenta: hsl(300, 69%, 71%);
+    --white: #fff;
 
     --regular-font-weight: 400;
     --bold-font-weight: 600;
+
+    --regular-font-size: 18px;
+    --big-font-size: 40px;
 
     --poppins-font-family: 'Poppins', sans-serif;
     --opensans-font-family: 'Open Sans', sans-serif;
@@ -18,4 +22,105 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+.page-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    max-width: var(--max-width-wrapper);
+    height: auto;
+    max-height: 800px;
+    margin: auto;
+    background: var(--violet) url("images/bg-desktop.svg") no-repeat;
+    background-size: contain;
+    background-blend-mode: unset;
+}
+
+.page-container {
+    width: 1300px;
+    height: 100%;
+    padding: 55px 0 40px 0;
+}
+
+.page-logo {
+    width: auto;
+    height: 52px;
+    margin-bottom: 70px;
+}
+
+.page-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.page-illustration {
+    width: 55%;
+}
+
+.page-illustration img {
+    width: auto;
+    height: 505px;
+}
+
+.page-banner {
+    width: 45%;
+    padding: 50px 25px 0 50px;
+    color: var(--white);
+}
+
+.page-banner h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.page-banner p{
+    font-family: var(--opensans-font-family);
+    font-size: var(--regular-font-size);
+    color: #ffffffab;
+    line-height: 27px;
+    margin-bottom: 22px;
+}
+
+.banner-button{
+    font-size: var(--regular-font-size);
+    color: var(--violet);
+    width: 200px;
+    height: 55px;
+    border: none;
+    border-radius: 35px;
+    box-shadow: 0px 8px 21px -11px hsl(257deg 100% 10%);
+}
+
+.social-media{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 15px;
+    float: right;
+    width: 200px;
+    height: 60px;
+}
+
+.social-media a{
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+
+.social-media a svg{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: 20px;
+}
+
+.social-media a svg path {
+    fill: var(--white);
 }
