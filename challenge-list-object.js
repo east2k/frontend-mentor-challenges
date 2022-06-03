@@ -1,4 +1,4 @@
-const projectList = [{
+const challengeList = [{
         name: "Interactive Rating",
         description: "Small project to practice handling user interactions and updating the DOM.",
         tags: ["Newbie", "HTML", "CSS", "JS"],
