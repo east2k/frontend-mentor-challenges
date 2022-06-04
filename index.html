@@ -15,27 +15,49 @@
     <header class="page-header">
         <div class="page-logo">Frontend Mentor Challenges</div>
         <nav class="page-navigation">
-            <select class="dropdown difficulty" name="difficulty">
-                <option disabled selected>Difficulty</option>
-                <option value="all-difficulty">All</option>
-                <option value="newbie">Newbie</option>
-                <option value="junior">Junior</option>
-                <option value="intermediate">Intermediate</option>
-                <option value="advanced">Advanced</option>
-            </select>
-            <select class="dropdown type" name="type">
-                <option disabled selected>Type</option>
-                <option value="all-type">All</option>
-                <option value="html">HTML</option>
-                <option value="css">CSS</option>
-                <option value="js">JS</option>
-            </select>
+            <div class="dropdown difficulty">
+                <p>Difficulty</p>
+                <img src="assets/svg/angle-down-solid.svg" alt="Arrow Icon">
+                <div class="dropdown-options ">
+                    <!-- <label for="all-difficulty">All
+                        <input type="checkbox" id="all-difficulty" checked>
+                    </label> -->
+                    <label for="newbie">Newbie
+                        <input type="checkbox" id="newbie" value="newbie" name="difficulty">
+                    </label>
+                    <label for="junior">Junior
+                        <input type="checkbox" id="junior" value="junior" name="difficulty">
+                    </label>
+                    <label for="intermediate">Intermediate
+                        <input type="checkbox" id="intermediate" value="intermediate" name="difficulty">
+                    </label>
+                    <label for="advanced">Advanced
+                        <input type="checkbox" id="advanced" value="advanced" name="difficulty">
+                    </label>
+                </div>
+            </div>
+            <div class="dropdown type">
+                Type
+                <img src="assets/svg/angle-down-solid.svg" alt="Arrow Icon">
+                <div class="dropdown-options ">
+                    <label for="html">HTML
+                        <input type="checkbox" id="html" value="html" name="type">
+                    </label>
+                    <label for="css">CSS
+                        <input type="checkbox" id="css" value="css" name="type">
+                    </label>
+                    <label for="js">JS
+                        <input type="checkbox" id="js" value="js" name="type">
+                    </label>
+                </div>
+            </div>
         </nav>
     </header>
     <main class="main-content">
     </main>
-    <script src="challenge-list-object.js"></script> 
-    <script src="add-project.js"></script> 
+    <script src="challenge-list-object.js"></script>
+    <script src="add-project.js"></script>
+    <script src="filter-challenge.js"></script>
 </body>
 
 </html>

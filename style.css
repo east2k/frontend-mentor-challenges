@@ -26,11 +26,6 @@
     --main-font: 'Public Sans', sans-serif;
     --side-font: 'Ibarra Real Nova', serif;
 
-    /* 
-    font-family: 'Ibarra Real Nova', serif;
-    font-family: 'Public Sans', sans-serif; 
-    */
-
     --max-width-wrapper: 1100px;
 }
 
@@ -85,29 +80,77 @@
 } */
 
 .dropdown {
+    position: relative;
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     font-size: var(--very-small-text);
     font-weight: var(--side-font-weight);
-    width: 120px;
+    width: 175px;
     height: 40px;
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: 250ms;
-    padding: 5px;
+    padding: 5px 15px;
+    border: 1px solid var(--black-color);
+    text-align: center;
+}
+.dropdown.type{
+    width: 125px;
 }
 
-.dropdown.type {
-    width: 75px;
+
+/* .dropdown.expand {
+    width: 200px;
+} */
+
+
+.dropdown img {
+    width: 9px;
+    transition: 250ms;
 }
+.dropdown.expand img{
+    transform: rotate(180deg);
+}
+
+.dropdown.expand .dropdown-options {
+    display: block;
+}
+
+.dropdown-options {
+    display: none;
+    font-size: var(--small-text);
+    position: absolute;
+    width: inherit;
+    top: 100%;
+    left: -1px;
+}
+
+.dropdown-options label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px;
+    height: 50px;
+    background-color: var(--white-color);
+    border: 1px solid var(--black-color);
+    margin-bottom: -1px;
+}
+
+
+
+/* .dropdown.difficulty {
+    width: 75px;
+} */
 
 .main-content {
     width: 100%;
     max-width: var(--max-width-wrapper);
     /* background-color: pink; */
     margin: auto;
+    padding:  0 15px;
 }
 
 .project-container {
@@ -182,7 +225,7 @@
     flex-wrap: wrap;
     gap: 10px;
     margin-bottom: var(--small-margin);
-    
+
 }
 
 .tag-container {
@@ -201,10 +244,12 @@
     background-color: #aad742;
     box-shadow: 0px 5px 4px -3px #aad742a8;
 }
+
 .tag-container.intermediate {
     background-color: #f1b604;
     box-shadow: 0px 5px 4px -3px #f1b604a8;
 }
+
 .tag-container.advanced {
     background-color: #f48925;
     box-shadow: 0px 5px 4px -3px #f48925a8;
@@ -247,7 +292,7 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: 250ms;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 
 .project-link.site {
