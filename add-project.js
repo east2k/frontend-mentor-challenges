@@ -1,77 +1,77 @@
 const mainContent = document.querySelector(".main-content");
 
 const addChallenge = (challenge) => {
-    const projectContainer = document.createElement("div");
-    projectContainer.classList.add("project-container");
-    mainContent.appendChild(projectContainer);
+    mainContent.innerHTML = ""
 
-    const projectImage = document.createElement("div");
-    projectImage.classList.add("project-img");
+    for (let i = 0; i < challenge.length; i++) {
+        const projectContainer = document.createElement("div");
+        projectContainer.classList.add("project-container");
+        mainContent.appendChild(projectContainer);
 
-    const thumbnail = document.createElement("img");
-    thumbnail.setAttribute("alt", "Challlenge Preview Image");
-    projectImage.appendChild(thumbnail);
-    projectContainer.appendChild(projectImage);
+        const projectImage = document.createElement("div");
+        projectImage.classList.add("project-img");
 
-    const projectContent = document.createElement("div");
-    projectContent.classList.add("project-content");
-    projectContainer.appendChild(projectContent);
+        const thumbnail = document.createElement("img");
+        thumbnail.setAttribute("alt", "Challlenge Preview Image");
+        projectImage.appendChild(thumbnail);
+        projectContainer.appendChild(projectImage);
 
-    const projectHeader = document.createElement("div");
-    projectHeader.classList.add("project-header");
-    projectContent.appendChild(projectHeader);
+        const projectContent = document.createElement("div");
+        projectContent.classList.add("project-content");
+        projectContainer.appendChild(projectContent);
 
-    const projectDescription = document.createElement("div");
-    projectDescription.classList.add("project-description");
-    projectContent.appendChild(projectDescription);
+        const projectHeader = document.createElement("div");
+        projectHeader.classList.add("project-header");
+        projectContent.appendChild(projectHeader);
 
-    const projectTags = document.createElement("div");
-    projectTags.classList.add("project-tags");
-    projectContent.appendChild(projectTags);
+        const projectDescription = document.createElement("div");
+        projectDescription.classList.add("project-description");
+        projectContent.appendChild(projectDescription);
 
-    const projectLinkContainer = document.createElement("div");
-    projectLinkContainer.classList.add("project-link-container");
-    projectContent.appendChild(projectLinkContainer);
+        const projectTags = document.createElement("div");
+        projectTags.classList.add("project-tags");
+        projectContent.appendChild(projectTags);
 
-    const liveLink = document.createElement("a");
-    liveLink.classList.add("project-link", "site");
-    liveLink.innerHTML = "View Project"
-    liveLink.setAttribute("target", "_blank");
-    projectLinkContainer.appendChild(liveLink);
+        const projectLinkContainer = document.createElement("div");
+        projectLinkContainer.classList.add("project-link-container");
+        projectContent.appendChild(projectLinkContainer);
 
-    const challengeLink = document.createElement("a");
-    challengeLink.classList.add("project-link", "challenge");
-    challengeLink.innerHTML = "View Challenge"
-    challengeLink.setAttribute("target", "_blank");
-    projectLinkContainer.appendChild(challengeLink);
+        const liveLink = document.createElement("a");
+        liveLink.classList.add("project-link", "site");
+        liveLink.innerHTML = "View Project"
+        liveLink.setAttribute("target", "_blank");
+        projectLinkContainer.appendChild(liveLink);
 
-    const githubLink = document.createElement("a");
-    githubLink.classList.add("project-link", "github");
-    githubLink.setAttribute("target", "_blank");
-    projectLinkContainer.appendChild(githubLink);
+        const challengeLink = document.createElement("a");
+        challengeLink.classList.add("project-link", "challenge");
+        challengeLink.innerHTML = "View Challenge"
+        challengeLink.setAttribute("target", "_blank");
+        projectLinkContainer.appendChild(challengeLink);
 
-    const githubLogo = document.createElement("img");
-    githubLogo.setAttribute("src", "assets/GitHub-Mark-64px.png");  
-    githubLink.appendChild(githubLogo);
+        const githubLink = document.createElement("a");
+        githubLink.classList.add("project-link", "github");
+        githubLink.setAttribute("target", "_blank");
+        projectLinkContainer.appendChild(githubLink);
 
-    thumbnail.setAttribute("src", challenge.image);
-    projectHeader.innerHTML = challenge.name;
-    projectDescription.innerHTML = challenge.description;
-    liveLink.setAttribute("href", challenge.liveLink);
-    challengeLink.setAttribute("href", challenge.frontendLink);
-    githubLink.setAttribute("href", challenge.repositoryLink);
+        const githubLogo = document.createElement("img");
+        githubLogo.setAttribute("src", "assets/GitHub-Mark-64px.png");
+        githubLink.appendChild(githubLogo);
 
-    // Add tags
-    for(let i = 0; i < challenge.tags.length; i++){
-        const tagContainer = document.createElement("div");
-        tagContainer.classList.add(challenge.tags[i].toLowerCase());
-        tagContainer.innerHTML = challenge.tags[i];
-        tagContainer.classList.add("tag-container");
-        projectTags.appendChild(tagContainer);
+        thumbnail.setAttribute("src", challenge[i].image);
+        projectHeader.innerHTML = challenge[i].name;
+        projectDescription.innerHTML = challenge[i].description;
+        liveLink.setAttribute("href", challenge[i].liveLink);
+        challengeLink.setAttribute("href", challenge[i].frontendLink);
+        githubLink.setAttribute("href", challenge[i].repositoryLink);
+
+        // Add tags
+        for (let e = 0; e < challenge[i].tags.length; e++) {
+            const tagContainer = document.createElement("div");
+            tagContainer.classList.add(challenge[i].tags[e].toLowerCase());
+            tagContainer.innerHTML = challenge[i].tags[e];
+            tagContainer.classList.add("tag-container");
+            projectTags.appendChild(tagContainer);
+        }
     }
-
 }
-
-for (let i = 0; i < challengeList.length; i++) {
-    addChallenge(challengeList[i]);
-}
+addChallenge(challengeList);

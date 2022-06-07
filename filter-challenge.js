@@ -19,30 +19,57 @@ const clickOutside = (i) => {
     });
 }
 
+let checker = (filter) => {
+    const areFalseDifficulty = Object.values(filter.difficulty).every(value => value === false);
+    const areFalseType = Object.values(filter.type).every(value => value === false);
+    // console.log(areFalseDifficulty && areFalseType)
+    if (areFalseDifficulty && areFalseType) {
+        addChallenge(challengeList)
+    } else if (!areFalseDifficulty && areFalseType || areFalseDifficulty && !areFalseType) {
+        filterChallenges(challengeList, filter, true);
+    } else {
+        filterChallenges(challengeList, filter, false);
+    }
+};
 
-
-const filterChallenges = (challenge, filter) => {
+const filterChallenges = (challenge, filter, status) => {
     const filterKeys = Object.keys(filter);
     const difficultyKeys = Object.keys(filter.difficulty);
     const typeKeys = Object.keys(filter.type);
 
     const filterList = challenge.filter((challenge) => {
-        let include = true;
+        let include = true,
+            includeDiff = false,
+            includeType = false;
         for (let i = 0; i < filterKeys.length; i++) {
             if (filterKeys[i] === "difficulty") {
                 for (let diff of difficultyKeys) {
-                    // console.log(filter.difficulty[diff] === false)
-                    // console.log(diff === challenge.tags[0].toLowerCase() && filter.difficulty[diff] === false)
-                    if (diff === challenge.tags[0].toLowerCase() && filter.difficulty[diff] === false) include = false;
+                    if (diff === challenge.tags[0].toLowerCase() && filter.difficulty[diff]) includeDiff = true;
                 }
-            } else if (filterKeys[i] === "type") {}
+            } else if (filterKeys[i] === "type") {
+                for (let type of typeKeys) {
+                    for (let e = 1; e < challenge.tags.length; e++) {
+                        if (type === challenge.tags[e].toLowerCase()) {
+                            if ((type === "html" && filter.type[type]) && !challenge.tags.includes("JS")) includeType = true;
+                            if ((type === "js" && filter.type[type])) includeType = true;
+                        }
+                    }
+                }
+            }
+        }
+        if (!includeDiff && !includeType) include = false;
+        if (status) {
+            if (!includeDiff && includeType) include = true;
+            else if (includeDiff && !includeType) include = true;
+        } else {
+            if (!includeDiff && includeType) include = false;
+            else if (includeDiff && !includeType) include = false;
+            else if (includeDiff || includeType) include = true;
         }
         return include;
     });
-
-    for(let i = 0; i<filterList.length; i++){
-        addChallenge(filterList[i])
-    }}
+    addChallenge(filterList)
+}
 
 // Filters Object
 const filters = {
@@ -67,7 +94,8 @@ const updateFilterObject = (event) => {
     const checked = event.target.checked;
 
     filters[name][value] = checked
-    filterChallenges(challengeList, filters);
+    // filterChallenges(challengeList, filters);
+    checker(filters);
 }
 
 const difficultyList = document.querySelectorAll("input[name='difficulty'");

@@ -145,7 +145,7 @@ const challengeList = [{
     }, {
         name: "TEST",
         description: "TEST .TEST .TEST .TEST .TEST .TEST .TEST .TEST .TEST .TEST .TEST .TEST .TEST .TEST .",
-        tags: ["Junior", "HTML", "CSS"],
+        tags: ["Junior", "HTML", "CSS", "JS"],
         image: "assets/thumbnails/huddle-landing-page.png",
         liveLink: "challenge-lists/huddle-landing-page/index.html",
         frontendLink: "https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0",
@@ -154,6 +154,22 @@ const challengeList = [{
         name: "TEST",
         description: "TEST .TEST .TEST .TEST .TEST .TEST .TEST .TEST .TEST .TEST .TEST .TEST .TEST .TEST .",
         tags: ["Intermediate", "HTML", "CSS"],
+        image: "assets/thumbnails/huddle-landing-page.png",
+        liveLink: "challenge-lists/huddle-landing-page/index.html",
+        frontendLink: "https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0",
+        repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/huddle-landing-page"
+    }, {
+        name: "TEST",
+        description: "TEST .TEST .TEST .TEST .TEST .TEST .TEST .TEST .TEST .TEST .TEST .TEST .TEST .TEST .",
+        tags: ["Intermediate", "HTML", "CSS"],
+        image: "assets/thumbnails/huddle-landing-page.png",
+        liveLink: "challenge-lists/huddle-landing-page/index.html",
+        frontendLink: "https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0",
+        repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/huddle-landing-page"
+    }, {
+        name: "TEST",
+        description: "TEST .TEST .TEST .TEST .TEST .TEST .TEST .TEST .TEST .TEST .TEST .TEST .TEST .TEST .",
+        tags: ["Advanced", "HTML", "CSS"],
         image: "assets/thumbnails/huddle-landing-page.png",
         liveLink: "challenge-lists/huddle-landing-page/index.html",
         frontendLink: "https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0",
