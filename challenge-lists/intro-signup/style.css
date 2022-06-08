@@ -27,18 +27,21 @@
     box-sizing: border-box;
 }
 
+body {
+    background: linear-gradient(hsl(0, 100%, 74%), hsl(0deg 100% 74% / 95%)), url(images/bg-intro-desktop.png);
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-size: cover;
+}
+
 .page-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     max-width: var(--max-width-wrapper);
-    height: 795px;
+    height: 100vh;
     margin: auto;
-    background: linear-gradient(hsl(0, 100%, 74%), hsl(0deg 100% 74% / 95%)), url(images/bg-intro-desktop.png);
-    background-repeat: no-repeat;
-    background-blend-mode: overlay;
-    background-size: cover;
 }
 
 .page-container {
@@ -160,6 +163,7 @@
     height: 55px;
     background-color: var(--green);
     border: none;
+    outline: none;
     border-radius: 8px;
     font-size: calc(var(--regular-font-size) - 1px);
     font-weight: var(--semi-font-weight);
@@ -177,7 +181,7 @@
 .signup-success {
     position: absolute;
     color: var(--green);
-    font-size: var(--regular-font-size);
+    font-size: calc(var(--regular-font-size) - 5px);
     top: 0;
     right: 0;
     transform: scaleY(0);
@@ -185,7 +189,7 @@
 }
 
 .signup-success.active {
-    top: -25px;
+    top: -15px;
     transform: scaleY(1);
 }
 

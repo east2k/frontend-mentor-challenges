@@ -40,7 +40,7 @@ const challengeList = [{
         tags: ["Newbie", "HTML", "CSS"],
         image: "assets/thumbnails/stat-preview-card.png",
         boxShadow: "#1b1938",
-        liveLink: "challenge-lists/stat-preview-card/index.html",
+        liveLink: "challenge-lists/stats-preview-card/index.html",
         frontendLink: "https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62",
         repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/stats-preview-card"
     }, {
@@ -49,7 +49,7 @@ const challengeList = [{
         tags: ["Newbie", "HTML", "CSS"],
         image: "assets/thumbnails/3-col-prev-card.png",
         boxShadow: "#cfcfcfd1",
-        liveLink: "challenge-lists/3-col-prev-card/index.html",
+        liveLink: "challenge-lists/3-column-prev-card/index.html",
         frontendLink: "https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-",
         repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/3-column-prev-card"
     }, {
@@ -67,7 +67,7 @@ const challengeList = [{
         tags: ["Newbie", "HTML", "CSS", "JS"],
         image: "assets/thumbnails/faq-accordion-card.png",
         boxShadow: "#6965e7c4",
-        liveLink: "challenge-lists/faq-accordion-card/index.html",
+        liveLink: "challenge-lists/faq-accordion/index.html",
         frontendLink: "https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam",
         repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/faq-accordion"
     }, {
@@ -94,7 +94,7 @@ const challengeList = [{
         tags: ["Newbie", "HTML", "CSS"],
         image: "assets/thumbnails/four-card.png",
         boxShadow: "#5e607138",
-        liveLink: "challenge-lists/four-card/index.html",
+        liveLink: "challenge-lists/four-card-feature/index.html",
         frontendLink: "https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK",
         repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/four-card-feature"
     }, {
@@ -130,7 +130,7 @@ const challengeList = [{
         tags: ["Newbie", "HTML", "CSS", "JS"],
         image: "assets/thumbnails/ping-page.png",
         boxShadow: "#ebebeb",
-        liveLink: "challenge-lists/ping-page/index.html",
+        liveLink: "challenge-lists/ping-coming-soon-page/index.html",
         frontendLink: "www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da",
         repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/ping-coming-soon-page"
     }, {
@@ -144,12 +144,12 @@ const challengeList = [{
         repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/huddle-landing-page"
     }
     // , {
-    //     name: "naaaaaaaaaaaaaaaaaaaaaaaaaaaaame",
-    //     description: "yeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+    //     name: "------------------------------------------",
+    //     description: "-----------------------------------------",
     //     tags: ["Newbie", "HTML", "CSS"],
-    //     image: "assets/thumbnails/naaaaaaaaaaaaaaaaaaaaaaaaaaaaame.png",
-    //     liveLink: "challenge-lists/naaaaaaaaaaaaaaaaaaaaaaaaaaaaame/index.html",
-    //     frontendLink: "liiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiink",
-    //     repositoryLink: "liiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiink"
+    //     image: "assets/thumbnails/---------------------------------------------.png",
+    //     liveLink: "challenge-lists/-------------------------------------------/index.html",
+    //     frontendLink: "-----------------------------------------------------",
+    //     repositoryLink: "--------------------------------------------------"
     // }
 ]

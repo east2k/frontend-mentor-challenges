@@ -27,6 +27,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background: var(--light-gradient);
+}
+
 .page-wrapper {
     display: flex;
     align-items: center;
@@ -35,7 +39,6 @@
     max-width: var(--max-width-wrapper);
     height: 810px;
     margin: auto;
-    background: var(--light-gradient);
     /* background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%)); */
 }
 
@@ -44,7 +47,6 @@
     flex-direction: row;
     height: 100%;
     width: 100%;
-    overflow: hidden;
 }
 
 .section-img {
@@ -100,6 +102,7 @@
     position: relative;
     width: 440px;
     height: 55px;
+    background-color: white;
 }
 
 .section-email-input {
@@ -166,7 +169,7 @@
     position: absolute;
     transition: 150ms;
     left: 30px;
-    bottom: -5px;
+    bottom: 0px;
     z-index: -1;
 }
 

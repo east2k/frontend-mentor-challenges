@@ -25,17 +25,18 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--dark-cyan);
+}
+
 .page-wrapper {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: var(--max-width-wrapper);
     height: 100vh;
-    max-height: 828px;
     margin: auto;
-    background-color: var(--dark-cyan);
     overflow: hidden;
 }
 

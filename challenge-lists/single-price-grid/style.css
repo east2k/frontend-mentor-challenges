@@ -28,6 +28,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: var(--light-gray);
+}
 
 .page-wrapper {
     display: flex;
@@ -36,9 +39,7 @@
     width: 100%;
     max-width: var(--max-width-wrapper);
     height: 100vh;
-    max-height: 795px;
     margin: auto;
-    background-color: var(--light-gray);
 }
 
 .page-container {

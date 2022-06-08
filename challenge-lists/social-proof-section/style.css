@@ -31,9 +31,7 @@
     width: 100%;
     max-width: var(--max-width-wrapper);
     height: 100vh;
-    max-height: 960px;
     margin: auto;
-
 }
 
 .section-container {
@@ -167,7 +165,7 @@
 }
 
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 768px) {
     .section-wrapper {
         height: auto;
         align-items: flex-start;

@@ -35,6 +35,9 @@
     color: var(--very-dark-desaturated-blue);
 }
 
+body {
+    background: linear-gradient(180deg, var(--soft-violet), var(--soft-blue));}
+
 .page-wrapper {
     display: flex;
     align-items: center;
@@ -42,8 +45,7 @@
     width: 100%;
     max-width: var(--max-width-wrapper);
     height: 100vh;
-    max-height: 960px;
-    background: linear-gradient(180deg, var(--soft-violet), var(--soft-blue));
+    margin: auto;
 }
 
 .card-container {
