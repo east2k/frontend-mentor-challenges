@@ -22,9 +22,9 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://frontend-mentor-challenges-henna.vercel.app/challenge-lists/profile-card/index.html](https://frontend-mentor-challenges-henna.vercel.app/challenge-lists/profile-card/index.html)
 
 ## Author
 
-- Website - [Christian Estoque](https://www.your-site.com)
+- Website - [Christian Estoque](https://frontend-mentor-challenges-henna.vercel.app/)
 - Frontend Mentor - [@east2k](https://www.frontendmentor.io/profile/east2k)

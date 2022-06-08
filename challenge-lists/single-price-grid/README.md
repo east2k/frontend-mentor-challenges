@@ -25,9 +25,9 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://frontend-mentor-challenges-henna.vercel.app/challenge-lists/single-price-grid/index.html](https://frontend-mentor-challenges-henna.vercel.app/challenge-lists/single-price-grid/index.html)
 
 ## Author
 
-- Website - [Christian Estoque](https://www.your-site.com)
+- Website - [Christian Estoque](https://frontend-mentor-challenges-henna.vercel.app/)
 - Frontend Mentor - [@east2k](https://www.frontendmentor.io/profile/east2k)

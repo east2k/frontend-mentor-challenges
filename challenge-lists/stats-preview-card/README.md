@@ -20,13 +20,13 @@ Users should be able to:
 
 ### Screenshot
 
-![Preview Screenshot](/assets/thumbnails/stat-preview-card.png.png)
+![Preview Screenshot](/assets/thumbnails/stat-preview-card.png)
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://frontend-mentor-challenges-henna.vercel.app/challenge-lists/stats-preview-card/index.html](https://frontend-mentor-challenges-henna.vercel.app/challenge-lists/stats-preview-card/index.html)
 
 ## Author
 
-- Website - [Christian Estoque](https://www.your-site.com)
+- Website - [Christian Estoque](https://frontend-mentor-challenges-henna.vercel.app/)
 - Frontend Mentor - [@east2k](https://www.frontendmentor.io/profile/east2k)
