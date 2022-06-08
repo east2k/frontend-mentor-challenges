@@ -63,39 +63,27 @@
     gap: 15px;
 }
 
-/* .page-navigation ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: 40px;
+
+
+.dropdown-container{
+    position: relative;
 }
-
-.page-navigation ul li a {
-    cursor: pointer;
-    font-size: var(--small-text);
-    font-weight: var(--side-font-weight);
-    color: var(--black-color);
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-} */
-
 .dropdown {
     position: relative;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-align: center;
     font-size: var(--very-small-text);
     font-weight: var(--side-font-weight);
-    width: 175px;
-    height: 40px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    transition: 250ms;
+    width: 175px;
+    height: 40px;
     padding: 5px 15px;
     border: 1px solid var(--black-color);
-    text-align: center;
+    background-color: var(--white-color);
 }
 
 .dropdown img {
@@ -103,26 +91,35 @@
     transition: 250ms;
 }
 
-.dropdown.expand img {
+.dropdown-container.expand .dropdown img {
     transform: rotate(180deg);
 }
 
-.dropdown.expand .dropdown-options {
+.dropdown-container.expand .dropdown-options {
     display: block;
-}
-
-.label-container{
-    width: 100%;
-    height: auto;
 }
 
 .dropdown-options {
     display: none;
     font-size: var(--small-text);
     position: absolute;
-    width: inherit;
-    top: 100%;
-    left: -1px;
+    width: 175px;
+    top: 99%;
+    left: 0px;
+}
+
+.dropdown-options span {
+    cursor: auto;
+    display: block;
+    color: #33323d50;
+    background-color: var(--white-color);
+    border: 1px solid var(--black-color);
+    margin-bottom: -1px;
+    padding: 15px;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: var(--side-font-weight);
 }
 
 .dropdown-options label {
@@ -135,16 +132,13 @@
     background-color: var(--white-color);
     border: 1px solid var(--black-color);
     margin-bottom: -1px;
+    text-transform: capitalize;
+    letter-spacing: 0px;
 }
 
-input[name='difficulty']{
+.dropdown-options label input{
+    cursor: pointer;
 }
-
-
-
-/* .dropdown.difficulty {
-    width: 75px;
-} */
 
 .main-content {
     width: 100%;
@@ -322,7 +316,3 @@ input[name='difficulty']{
 .project-link.github:hover {
     opacity: 0.7;
 }
-
-/* .project-link.github:hover {
-    border-bottom: 1px solid var(--light-black-color);
-} */
