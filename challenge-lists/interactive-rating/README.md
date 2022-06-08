@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./assets/thumbnails/interactive-rating.png)
+![Preview Screenshot](/assets/thumbnails/interactive-rating.png)
 
 ### Links
 
