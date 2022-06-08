@@ -28,13 +28,15 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: var(--very-dark-blue);
+}
+
 .rating-background {
     margin: auto;
     width: 100%;
     max-width: var(--max-width-wrapper);
-    background-color: var(--very-dark-blue);
     height: 100vh;
-    max-height: 960px;
     display: flex;
     align-items: center;
     justify-content: center;
