@@ -1,7 +1,7 @@
 const dropdownContainer = document.querySelector(".dropdown-container");
 const dropdown = document.querySelector(".dropdown");
 
-// Dropdown toggl
+// Dropdown toggle
 dropdown.addEventListener('click', () => {
     dropdownContainer.classList.toggle("expand");
     clickOutside();

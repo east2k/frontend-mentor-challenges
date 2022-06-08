@@ -60,6 +60,7 @@ const addChallenge = (challenge) => {
         thumbnail.setAttribute("src", challenge[i].image);
         projectHeader.innerHTML = challenge[i].name;
         projectDescription.innerHTML = challenge[i].description;
+        projectImage.style.cssText = "box-shadow: 0px 10px 5px -5px "+ challenge[i].boxShadow;;
         liveLink.setAttribute("href", challenge[i].liveLink);
         challengeLink.setAttribute("href", challenge[i].frontendLink);
         githubLink.setAttribute("href", challenge[i].repositoryLink);
