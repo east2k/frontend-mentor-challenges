@@ -23,23 +23,25 @@
                 <div class="dropdown-options">
                     <span>Difficulty</span>
                     <label for="newbie">Newbie
-                        <input type="checkbox" id="newbie" value="newbie" name="difficulty">
+                        <input type="checkbox" id="newbie" onchange="handleOnCheckboxChange('difficulty', 'newbie')">
                     </label>
                     <label for="junior">Junior
-                        <input type="checkbox" id="junior" value="junior" name="difficulty">
+                        <input type="checkbox" id="junior" onchange="handleOnCheckboxChange('difficulty', 'junior')">
                     </label>
                     <label for="intermediate">Intermediate
-                        <input type="checkbox" id="intermediate" value="intermediate" name="difficulty">
+                        <input type="checkbox" id="intermediate"
+                            onchange="handleOnCheckboxChange('difficulty', 'intermediate')">
                     </label>
                     <label for="advanced">Advanced
-                        <input type="checkbox" id="advanced" value="advanced" name="difficulty">
+                        <input type="checkbox" id="advanced"
+                            onchange="handleOnCheckboxChange('difficulty', 'advanced')">
                     </label>
                     <span>Type</span>
                     <label for="html">HTML & CSS
-                        <input type="checkbox" id="html" value="html" name="type">
+                        <input type="checkbox" id="html" onchange="handleOnCheckboxChange('type', 'html')">
                     </label>
                     <label for="js">JS
-                        <input type="checkbox" id="js" value="js" name="type">
+                        <input type="checkbox" id="js" onchange="handleOnCheckboxChange('type', 'js')">
                     </label>
                 </div>
             </div>
@@ -48,8 +50,10 @@
     <main class="main-content">
     </main>
     <script src="challenge-list-object.js"></script>
-    <script src="add-challenge.js"></script>
-    <script src="filter-challenge.js"></script>
+    <script src="./scripts/renderer.js"></script>
+    <script src="./scripts/filter.js"></script>
+    <script src="./scripts/dropdown.js"></script>
+    <script src="./scripts/main.js"></script>
 </body>
 
 </html>
