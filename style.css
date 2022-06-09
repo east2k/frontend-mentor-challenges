@@ -65,9 +65,10 @@
 
 
 
-.dropdown-container{
+.dropdown-container {
     position: relative;
 }
+
 .dropdown {
     position: relative;
     cursor: pointer;
@@ -120,6 +121,7 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: var(--side-font-weight);
+    pointer-events: none;
 }
 
 .dropdown-options label {
@@ -136,7 +138,7 @@
     letter-spacing: 0px;
 }
 
-.dropdown-options label input{
+.dropdown-options label input {
     cursor: pointer;
 }
 

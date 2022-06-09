@@ -1,6 +1,11 @@
 const mainContent = document.querySelector(".main-content");
 
-const renderChallenges = (challenge) => {
+const renderChallenges = (challenges) => {
+    mainContent.innerHTML = ""
+    challenges.forEach(renderChallenge);
+}
+
+const renderChallenge = (challenge) => {
     const projectContainer = document.createElement("div");
     projectContainer.classList.add("project-container");
     mainContent.appendChild(projectContainer);
@@ -71,13 +76,3 @@ const renderChallenges = (challenge) => {
         projectTags.appendChild(tagContainer);
     }
 }
-
-const addChallenge = (challenge) => {
-    mainContent.innerHTML = ""
-
-    for (let i = 0; i < challenge.length; i++) {
-        renderChallenges(challenge[i]);
-    }
-}
-
-addChallenge(challengeList);
