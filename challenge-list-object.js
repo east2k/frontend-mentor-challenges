@@ -142,14 +142,22 @@ const challengeList = [{
         liveLink: "challenge-lists/huddle-landing-page/index.html",
         frontendLink: "https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0",
         repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/huddle-landing-page"
+    }, {
+        name: "Expenses Chart",
+        description: "Create a bar chart component from scratch",
+        tags: ["Newbie", "HTML", "CSS"],
+        image: "assets/thumbnails/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.png",
+        liveLink: "challenge-lists/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee/index.html",
+        frontendLink: "#",
+        repositoryLink: "#"
     }
     // , {
-    //     name: "------------------------------------------",
-    //     description: "-----------------------------------------",
+    //     name: "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+    //     description: "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
     //     tags: ["Newbie", "HTML", "CSS"],
-    //     image: "assets/thumbnails/---------------------------------------------.png",
-    //     liveLink: "challenge-lists/-------------------------------------------/index.html",
-    //     frontendLink: "-----------------------------------------------------",
-    //     repositoryLink: "--------------------------------------------------"
+    //     image: "assets/thumbnails/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.png",
+    //     liveLink: "challenge-lists/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee/index.html",
+    //     frontendLink: "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+    //     repositoryLink: "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
     // }
 ]
