@@ -145,11 +145,12 @@ const challengeList = [{
     }, {
         name: "Expenses Chart",
         description: "Create a bar chart component from scratch",
-        tags: ["Newbie", "HTML", "CSS"],
-        image: "assets/thumbnails/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.png",
-        liveLink: "challenge-lists/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee/index.html",
-        frontendLink: "#",
-        repositoryLink: "#"
+        tags: ["Junior", "HTML", "CSS", "JS"],
+        image: "assets/thumbnails/expenses-chart.png",
+        liveLink: "challenge-lists/expenses-chart/index.html",
+        boxShadow: "#38231447",
+        frontendLink: "https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt",
+        repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/expenses-chart"
     }
     // , {
     //     name: "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
@@ -157,6 +158,7 @@ const challengeList = [{
     //     tags: ["Newbie", "HTML", "CSS"],
     //     image: "assets/thumbnails/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.png",
     //     liveLink: "challenge-lists/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee/index.html",
+    //     boxShadow: "#00000035",
     //     frontendLink: "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
     //     repositoryLink: "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
     // }
