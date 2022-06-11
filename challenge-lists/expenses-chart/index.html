@@ -14,41 +14,32 @@
 
 <body>
   <main class="page-wrapper">
-    <div class="page-container">
-      <div class="page-content">
-        <header class="content-header">
-          <div class="user-details">
-            <p>My balance</p>
-            <span class="user-balance">$921.48</span>
+    <div class="page-content">
+      <header class="content-header">
+        <div class="user-details">
+          <p>My balance</p>
+          <h1 class="user-balance">$921.48</h1>
+        </div>
+        <img class="logo" src="images/logo.svg" alt="Logo">
+      </header>
+      <div class="content-body">
+        <h1>Spending - Last 7 days</h1>
+        <div class="bar-graph-container"><canvas id="bar-graph"></canvas></div>
+        <div class="content-details">
+          <div class="bar-graph-summarize">
+            <p>Total this month</p>
+            <span class="monthly-total">$478.33</span>
           </div>
-          <img class="logo" src="images/logo.svg" alt="Logo">
-        </header>
-        <div class="content-body">
-          <p>Spending - Last 7 days</p>
-          <div class="bar-graph-container"></div>
-          <div class="content-details">
-            <div class="bar-graph-summarize">
-              <p>Total this month</p>
-              <span class="monthly-total">$478.33</span>
-            </div>
-            <div class="bar-graph-summarize">
-              <span class="monthly-percentage">+2.4%</span>
-              <p>from last month</p>
-            </div>
+          <div class="bar-graph-summarize second">
+            <span class="monthly-percentage">+2.4%</span>
+            <p>from last month</p>
           </div>
         </div>
       </div>
     </div>
   </main>
-  <!-- 
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-  -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>

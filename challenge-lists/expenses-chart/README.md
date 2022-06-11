@@ -20,17 +20,16 @@ Users should be able to:
 - See the current day’s bar highlighted in a different colour to the other bars
 - View the optimal layout for the content depending on their device’s screen size
 - See hover states for all interactive elements on the page
-- **Bonus**: Use the JSON data file provided to dynamically size the bars on the chart
 
 ### Screenshot
 
-![Preview Screenshot](/assets/thumbnails/)
+![Preview Screenshot](/assets/thumbnails/expenses-chart.png)
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://frontend-mentor-challenges-henna.vercel.app/challenge-lists/expenses-chart/index.html](https://frontend-mentor-challenges-henna.vercel.app/challenge-lists/expenses-chart/index.html)
 
 ## Author
 
-- Website - [Christian Estoque](https://www.your-site.com)
+- Website - [Christian Estoque](https://frontend-mentor-challenges-henna.vercel.app/)
 - Frontend Mentor - [@east2k](https://www.frontendmentor.io/profile/east2k)
