@@ -15,26 +15,30 @@
 <body>
   <header class="page-header">
     <div class="navigation-container">
-      <img src="images/logo.svg" alt="Logo">
+      <img class="logo" src="images/logo.svg" alt="Logo">
       <nav class="navigation">
-        <div class="nav-item dropdown-container">Features</div>
-        <div class="nav-item dropdown-container">Company</div>
-        <div class="nav-item">Careers</div>
-        <div class="nav-item">About</div>
+        <div class="nav-item dropdown-container">
+          <div class="dropdown-name">Features <img src="images/icon-arrow-down.svg" alt="Arrow looking down"></div>
+        </div>
+        <div class="nav-item dropdown-container">
+          <div class="dropdown-name">Company <img src="images/icon-arrow-down.svg" alt="Arrow looking down"></div>
+        </div>
+        <div class="nav-item"><a href="#">Careers</a></div>
+        <div class="nav-item"><a href="#">About</a></div>
       </nav>
     </div>
     <div class="credential-buttons-container">
-      <button class="credential-button">Login</button>
-      <button class="credential-button">Register</button>
+      <button class="credential-button login">Login</button>
+      <button class="credential-button register">Register</button>
     </div>
   </header>
   <main class="page-wrapper">
     <section class="section-container">
       <div class="section-content">
-        <h1>Make remote work</h1>
+        <h1>Make <br>remote work</h1>
         <p>Get your team in sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.</p>
-        <button> Learn more</button>
+        <button class="section-button"> Learn more</button>
         <div class="clients-container">
           <img src="images/client-databiz.svg" alt="Client's logo">
           <img src="images/client-audiophile.svg" alt="Client's logo">
@@ -42,8 +46,8 @@
           <img src="images/client-maker.svg" alt="Client's logo">
         </div>
       </div>
-      <div class="section-content">
-        <img src="images/image-hero-desktop.png" alt="Images of a person holding a laptop">
+      <div class="section-content hero">
+        <img class="section-hero" src="images/image-hero-desktop.png" alt="Images of a person holding a laptop">
       </div>
     </section>
   </main>

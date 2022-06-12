@@ -6,7 +6,8 @@
     --almost-white: hsl(0, 0%, 98%);
     --medium-gray: hsl(0, 0%, 41%);
     --almost-black: hsl(0, 0%, 8%);
-    
+
+    --small-font-size: 14px;
     --regular-font-size: 18px;
 
     --regular-font-weight: 500;
@@ -18,4 +19,134 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+    padding: 0.70rem 2.55rem 0;
+    width: 100%;
+    max-width: var(--max-width-wrapper);
+    margin: auto;
+}
+
+.navigation-container, .navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: auto;
+    height: 27px;
+    margin-right: 4rem;
+}
+
+
+.navigation {
+    font-size: var(--small-font-size);
+    margin-bottom: 10px;
+    gap: 2.3rem;
+}
+
+.dropdown-name img {
+    margin-left: 5px
+}
+
+.nav-item {
+    cursor: pointer;
+    color: var(--medium-gray);
+}
+
+.nav-item a {
+    color: var(--medium-gray);
+    text-decoration: none;
+}
+
+.credential-button {
+    cursor: pointer;
+    width: 103px;
+    height: 42px;
+    border-radius: 13px;
+    border: 1px solid var(--almost-black);
+    outline: none;
+    color: var(--medium-gray);
+    background-color: #fff;
+    font-size: var(--small-font-size);
+    margin: 0 0 8px 5px;
+}
+
+.credential-button.login {
+    border: none;
+}
+
+.page-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: var(--max-width-wrapper);
+    margin: auto;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 3em;
+}
+
+.section-content {
+    width: 50%;
+    padding: 4.6em 0 5em 10.3em;
+}
+
+.section-content h1 {
+    font-size: 5em;
+    font-weight: var(--bold-font-weight);
+    color: var(--almost-black);
+    margin-top: 1em;
+    margin-bottom: 0.55em;
+}
+
+.section-content p {
+    font-size: var(--regular-font-size);
+    color: var(--medium-gray);
+    line-height: 1.5em;
+    width: 80%;
+    margin-bottom: 3em;
+}
+
+.section-button {
+    cursor: pointer;
+    font-size: var(--regular-font-size);
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    color: var(--almost-white);
+    background-color: var(--almost-black);
+    width: 9em;
+    height: 3.2em;
+    margin-bottom: 6em;
+}
+
+.clients-container {
+    display: flex;
+    align-items: center;
+    width: 25em;
+}
+
+.clients-container img {
+    margin-right: 2.5em;
+}
+
+.section-content.hero {
+    padding: 3em 7.5em;
+}
+
+.section-hero {
+    width: 100%;
+    height: auto;
 }
