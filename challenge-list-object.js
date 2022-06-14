@@ -151,11 +151,20 @@ const challengeList = [{
         boxShadow: "#38231447",
         frontendLink: "https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt",
         repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/expenses-chart"
+    }, {
+        name: "Intro Section With Downdown Nav",
+        description: "This challenge will test your ability to create dropdown navigation menus, a common pattern on larger sites. It will also provide some nice basic layout challenges.",
+        tags: ["Junior", "HTML", "CSS", "JS"],
+        image: "assets/thumbnails/intro-dropdown-nav.png",
+        liveLink: "challenge-lists/intro-dropdown-nav/index.html",
+        boxShadow: "#bebdbd7d",
+        frontendLink: "https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5",
+        repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/intro-dropdown-nav"
     }
     // , {
     //     name: "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
     //     description: "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
-    //     tags: ["Newbie", "HTML", "CSS"],
+    //     tags: ["Junior", "HTML", "CSS"],
     //     image: "assets/thumbnails/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.png",
     //     liveLink: "challenge-lists/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee/index.html",
     //     boxShadow: "#00000035",
