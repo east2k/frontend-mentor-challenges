@@ -13,24 +13,52 @@
 </head>
 
 <body>
+  <div class="background-darkener"></div>
   <header class="page-header">
+    <img class="logo" src="images/logo.svg" alt="Logo">
     <div class="navigation-container">
-      <img class="logo" src="images/logo.svg" alt="Logo">
+      <img class="close-menu" src="images/icon-close-menu.svg">
       <nav class="navigation">
         <div class="nav-item dropdown-container">
           <div class="dropdown-name">Features <img src="images/icon-arrow-down.svg" alt="Arrow looking down"></div>
+          <div class="dropdown-items features">
+            <div class="dropdown-option">
+              <div class="dropdown-img"><img src="images/icon-todo.svg" alt="Todo Icon"></div>Todo List
+            </div>
+            <div class="dropdown-option">
+              <div class="dropdown-img"><img src="images/icon-calendar.svg" alt="Calendar Icon"></div>Calendar
+            </div>
+            <div class="dropdown-option">
+              <div class="dropdown-img"><img src="images/icon-reminders.svg" alt="Reminder Icon"></div>Reminders
+            </div>
+            <div class="dropdown-option">
+              <div class="dropdown-img"><img src="images/icon-planning.svg" alt="Planning Icon"></div>Planning
+            </div>
+          </div>
         </div>
         <div class="nav-item dropdown-container">
           <div class="dropdown-name">Company <img src="images/icon-arrow-down.svg" alt="Arrow looking down"></div>
+          <div class="dropdown-items company">
+            <div class="dropdown-option">
+              History
+            </div>
+            <div class="dropdown-option">
+              Our Team
+            </div>
+            <div class="dropdown-option">
+              Blog
+            </div>
+          </div>
         </div>
         <div class="nav-item"><a href="#">Careers</a></div>
         <div class="nav-item"><a href="#">About</a></div>
       </nav>
+      <div class="credential-buttons-container">
+        <button class="credential-button login">Login</button>
+        <button class="credential-button register">Register</button>
+      </div>
     </div>
-    <div class="credential-buttons-container">
-      <button class="credential-button login">Login</button>
-      <button class="credential-button register">Register</button>
-    </div>
+    <img class="menu-logo" src="images/icon-menu.svg">
   </header>
   <main class="page-wrapper">
     <section class="section-container">
@@ -47,10 +75,12 @@
         </div>
       </div>
       <div class="section-content hero">
-        <img class="section-hero" src="images/image-hero-desktop.png" alt="Images of a person holding a laptop">
+        <img class="section-hero desktop" src="images/image-hero-desktop.png" alt="Images of a person holding a laptop">
+        <img class="section-hero mobile" src="images/image-hero-mobile.png" alt="Images of a person holding a laptop">
       </div>
     </section>
   </main>
+  <script src="script.js"></script>
 </body>
 
 </html>
