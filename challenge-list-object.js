@@ -161,6 +161,16 @@ const challengeList = [{
         frontendLink: "https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5",
         repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/intro-dropdown-nav"
     }
+    , {
+        name: "Time Tracking Dashboard",
+        description: "A perfect opportunity to practice your CSS Grid skills.",
+        tags: ["Junior", "HTML", "CSS", "JS"],
+        image: "assets/thumbnails/time-tracking-dashboard.png",
+        liveLink: "challenge-lists/time-tracking-dashboard/index.html",
+        boxShadow: "#0f1424eb",
+        frontendLink: "https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw",
+        repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/time-tracking-dashboard"
+    }
     // , {
     //     name: "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
     //     description: "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
