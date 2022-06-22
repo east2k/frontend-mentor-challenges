@@ -105,7 +105,7 @@ body {
     overflow: hidden;
 }
 
-.card:hover .card-body{
+.card:hover .card-body {
     background-color: #34397b;
 }
 
@@ -241,8 +241,8 @@ body {
     color: var(--white) !important;
 }
 
-.card-header img:hover{
-    filter:brightness(2);
+.card-header img:hover {
+    filter: brightness(2);
 }
 
 .given-time {
@@ -264,4 +264,104 @@ body {
 
 .previous-time::after {
     content: 'hrs';
+}
+
+@media only screen and (max-width: 1000px) {
+    .given-time {
+        font-size: 45px;
+    }
+}
+
+@media only screen and (max-width: 745px) {
+
+    .card-body {
+        padding: 25px;
+    }
+
+    .user-profile {
+        padding: 25px;
+    }
+
+    .user-details h2 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .page-container {
+        margin: 81px 0;
+        height: auto;
+    }
+
+    .page-content {
+        justify-content: center;
+        grid-template-columns: 87%;
+        grid-template-rows: 203px repeat(6, 160px);
+        grid-template-areas:
+            "wide"
+            "one"
+            "two"
+            "three"
+            "four"
+            "five"
+            "six"
+        ;
+        grid-gap: 24px;
+    }
+
+    .user-profile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 133px;
+        padding: 29px;
+    }
+
+    .user-img {
+        margin-bottom: 0;
+        margin-right: 17px;
+        height: 70px;
+    }
+
+    .user-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .user-details h2 {
+        margin-bottom: 0;
+        font-size: 24px;
+    }
+
+    .timeframe-list {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 24px 33px;
+
+    }
+
+    .card-header {
+        letter-spacing: 0.5px;
+        font-weight: var(--bold-font-weight) !important;
+        margin-bottom: -4px;
+    }
+
+    .card-body {
+        top: 38px;
+        padding: 18px 24px;
+    }
+
+    .card-body p {
+        float: right;
+        margin: 10px 0px;
+        font-weight: var(--regular-font-weight);
+    }
+
+    .given-time {
+        float: left;
+        font-size: 32px;
+    }
+
+
 }
