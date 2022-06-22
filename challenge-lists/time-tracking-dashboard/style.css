@@ -98,10 +98,15 @@ body {
 }
 
 .card {
+    cursor: pointer;
     position: relative;
     background-color: var(--dark-blue);
     border-radius: 15px;
     overflow: hidden;
+}
+
+.card:hover .card-body{
+    background-color: #34397b;
 }
 
 .user-profile {
@@ -140,9 +145,14 @@ body {
 }
 
 .timeframe {
-    color: var(--pale-blue);
+    cursor: pointer;
+    color: #bdc1ff8f;
     font-size: var(--regular-font-size);
     font-weight: var(--light-font-weight);
+}
+
+.timeframe:hover {
+    color: var(--white) !important;
 }
 
 .timeframe.active {
@@ -227,7 +237,12 @@ body {
 
 .card-header p {
     font-size: var(--regular-font-size) !important;
+    font-weight: var(--regular-font-weight) !important;
     color: var(--white) !important;
+}
+
+.card-header img:hover{
+    filter:brightness(2);
 }
 
 .given-time {
@@ -242,9 +257,9 @@ body {
 
 .card-body p,
 .card-body p span {
+    color: var(--pale-blue);
     font-size: var(--small-font-size);
     font-weight: var(--light-font-weight);
-    color: var(--pale-blue)
 }
 
 .previous-time::after {
