@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+  <main class="page-wrapper">
+    <div class="page-container">
+      <img src="images/logo.svg" alt="Logo">
+      <div class="page-content">
+        <div class="content-separator">
+          <div class="input-container bill">
+            <h2>Bill</h2>
+            <label class="input-label">
+              <img src="images/icon-dollar.svg" alt="Dollar Icon">
+              <input class="number-input" type="number" placeholder="0">
+            </label>
+          </div>
+          <div class="tip-container">
+            <h2>Select Tip %</h2>
+            <div class="tips-list">
+              <button class="tip-button">5%</button>
+              <button class="tip-button">10%</button>
+              <button class="tip-button">15%</button>
+              <button class="tip-button">25%</button>
+              <button class="tip-button">50%</button>
+              <input class="custom-tip" type="number" placeholder="Custom">
+            </div>
+          </div>
+          <div class="input-container amount">
+            <h2>Number of People</h2>
+            <label class="input-label">
+              <img src="images/icon-person.svg" alt="Person Icon">
+              <input class="number-input" type="number" placeholder="0">
+            </label>
+          </div>
+        </div>
+        <div class="content-separator">
+          <div class="result-container">
+            <div class="results">
+              <div class="result-label">
+                <h2>Tip Amount</h2>
+                <p>/ person</p>
+              </div>
+              <p class="result-total amount"></p>
+            </div>
+            <div class="results">
+              <div class="result-label">
+                <h2>Total</h2>
+                <p>/ person</p>
+              </div>
+              <p class="result-total total"></p>
+            </div>
+            <button>Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
