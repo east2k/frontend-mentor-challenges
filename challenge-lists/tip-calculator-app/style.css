@@ -161,6 +161,11 @@ body {
     border-radius: 5px;
 }
 
+.tip-button.active {
+    color: var(--very-dark-cyan);
+    background-color: var(--strong-cyan);
+}
+
 .tip-button:hover {
     color: var(--very-dark-cyan);
     background-color: var(--strong-cyan);
@@ -177,6 +182,9 @@ body {
     padding: 0px 10px;
 }
 
+.custom-tip.active{
+    border: 2px solid var(--strong-cyan);
+}
 
 .custom-tip:focus {
     border: 2px solid var(--strong-cyan);
@@ -215,6 +223,7 @@ body {
 }
 
 .reset-button {
+    cursor: pointer;
     width: 100%;
     height: 48px;
     margin-top: 95px;
@@ -224,6 +233,11 @@ body {
     background-color: #0d686d;
     border: none;
     border-radius: 5px;
+}
+
+.reset-button.available {
+    color: var(--very-dark-cyan);
+    background-color: #26c2ad;
 }
 
 .reset-button:hover {
