@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Preview Screenshot](/assets/thumbnails/tip-calculator-app)
+![Preview Screenshot](/assets/thumbnails/tip-calculator-app.png)
 
 ### Links
 
