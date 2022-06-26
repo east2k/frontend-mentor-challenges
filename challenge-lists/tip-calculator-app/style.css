@@ -87,6 +87,7 @@ body {
 .input-container.amount.active .input-label .number-input {
     border: 2px solid #cf6868;
 }
+
 .input-container.amount.active p {
     display: block;
 }
@@ -252,11 +253,66 @@ body {
     background-color: #9fe8df;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 950px) {
     .page-content {
-        width: 95%;
+        width: 100%;
         height: auto;
     }
 }
 
-@media only screen and (max-width: 660px) {}
+@media only screen and (max-width: 660px) {
+    .page-container {
+        margin: 50px 0 0;
+    }
+
+    .page-container img {
+        margin-bottom: 40px;
+    }
+
+    .page-content {
+        flex-direction: column;
+        padding: 24px;
+        border-radius: 25px 25px 0 0;
+    }
+
+    .content-separator {
+        width: 100%;
+    }
+
+    .content-separator.one {
+        padding: 8px;
+    }
+
+    .content-separator.two {
+        margin: 0;
+        padding: 36px 24px 24px;
+    }
+
+    .input-container {
+        margin-bottom: 21px;
+    }
+
+    .tip-container {
+        margin-bottom: 32px;
+    }
+
+    .tips-list {
+        gap: 16px;
+    }
+
+    .tip-button, .custom-tip {
+        width: 47%;
+    }
+
+    .results {
+        margin-bottom: 18px;
+    }
+
+    .result-total {
+        font-size: 34px;
+    }
+
+    .reset-button {
+        margin-top: 12px;
+    }
+}
