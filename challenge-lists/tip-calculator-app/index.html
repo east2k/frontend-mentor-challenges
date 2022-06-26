@@ -17,12 +17,11 @@
       <img src="images/logo.svg" alt="Logo">
       <div class="page-content">
         <div class="content-separator one">
-          <div class="input-container bill">
+          <div class="input-container">
             <h2>Bill</h2>
-            <p>Can't be zero</p>
             <label class="input-label">
               <img src="images/icon-dollar.svg" alt="Dollar Icon">
-              <input class="number-input" type="number" placeholder="0">
+              <input class="number-input" name="bill" type="number" placeholder="0">
             </label>
           </div>
           <div class="tip-container">
@@ -41,7 +40,7 @@
             <p>Can't be zero</p>
             <label class="input-label">
               <img src="images/icon-person.svg" alt="Person Icon">
-              <input class="number-input" type="number" placeholder="0">
+              <input class="number-input" name="tip" type="number" placeholder="0">
             </label>
           </div>
         </div>
@@ -69,8 +68,8 @@
   </main>
   <script src="current-user-input-object.js"></script>
   <script src="calculator.js"></script>
-  <script src="inputs-eventlistener.js"></script>
   <script src="reset-button.js"></script>
+  <script src="inputs-eventlistener.js"></script>
 </body>
 
 </html>

@@ -1,16 +1,23 @@
-const billInput = document.querySelector(".input-container.bill .input-label input");
-const amountInput = document.querySelector(".input-container.amount .input-label input");
+const numberInput = document.querySelectorAll(".number-input");
+const amountInputContainer = document.querySelector(".input-container.amount");
 const tipsButton = document.querySelectorAll(".tip-button");
 const customTip = document.querySelector(".custom-tip");
 
-billInput.addEventListener('change', (event) => {
-    calculatorObject.bill = parseFloat(event.target.value);
-    calculate();
-})
-
-amountInput.addEventListener('change', (event) => {
-    calculatorObject.people = parseFloat(event.target.value);
-    calculate();
+numberInput.forEach((input) => {
+    input.addEventListener('change', (event) => {
+        if (event.target.name === "bill") {
+            calculatorObject.bill = parseFloat(event.target.value);
+            calculate();
+        }
+        else {
+            if (parseFloat(event.target.value) === 0) amountInputContainer.classList.add("active");
+            else {
+                amountInputContainer.classList.remove("active");
+                calculatorObject.people = parseFloat(event.target.value)
+            };
+            calculate();
+        }
+    })
 })
 
 tipsButton.forEach((button) => {
@@ -33,3 +40,5 @@ customTip.addEventListener('change', (event) => {
     else calculatorObject.tip = parseFloat("." + event.target.value);
     calculate();
 })
+
+resetButton.addEventListener('click', reset);

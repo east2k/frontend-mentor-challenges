@@ -84,6 +84,13 @@ body {
     margin-bottom: 37px;
 }
 
+.input-container.amount.active .input-label .number-input {
+    border: 2px solid #cf6868;
+}
+.input-container.amount.active p {
+    display: block;
+}
+
 .input-container h2, .tip-container h2 {
     float: left;
     font-size: 16px;
@@ -182,7 +189,7 @@ body {
     padding: 0px 10px;
 }
 
-.custom-tip.active{
+.custom-tip.active {
     border: 2px solid var(--strong-cyan);
 }
 
@@ -244,3 +251,12 @@ body {
     color: var(--very-dark-cyan);
     background-color: #9fe8df;
 }
+
+@media only screen and (max-width: 1000px) {
+    .page-content {
+        width: 95%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 660px) {}

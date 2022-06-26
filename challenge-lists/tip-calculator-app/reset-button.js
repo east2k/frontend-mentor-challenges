@@ -1,14 +1,14 @@
 
 const resetButton = document.querySelector(".reset-button");
 
-resetButton.addEventListener('click', () => {
+const reset = () => {
     calculatorObject.bill = 0;
     calculatorObject.tip = 0;
     calculatorObject.people = 0;
     calculate();
 
-    billInput.value = 0;
-    amountInput.value = 0;
+    numberInput[0].value = 0;
+    numberInput[1].value = 0;
 
     customTip.value = 0;
 
@@ -19,4 +19,4 @@ resetButton.addEventListener('click', () => {
     if (currentActive !== null) currentActive.classList.remove("active");
 
     resetButton.classList.remove("available");
-});
+}
