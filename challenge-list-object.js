@@ -186,10 +186,10 @@ const challengeList = [{
     description: "This challenge will be a perfect test of your layout and responsive skills. There's a tiny bit of JS for the mobile menu, but the focus is HTML & CSS.",
     tags: ["Junior", "HTML", "CSS", "JS"],
     image: "assets/thumbnails/sunnyside-agency-landing-page.png",
-    liveLink: "challenge-lists/sunnyside-agency-landing-page/index.html",
+    liveLink: "challenge-lists/sunny-side-agency-landing-page/index.html",
     boxShadow: "#1c3a5836",
     frontendLink: "https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef",
-    repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/sunnyside-agency-landing-page"
+    repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/sunny-side-agency-landing-page"
 }
     // , {
     //     name: "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
