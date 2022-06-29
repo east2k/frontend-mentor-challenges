@@ -71,6 +71,10 @@
     margin-right: 8px;
 }
 
+.hamburger-menu {
+    display: none;
+}
+
 .page-navigation ul {
     display: flex;
     flex-direction: row;
@@ -354,4 +358,147 @@
 
 .social-link:hover {
     filter: brightness(10);
+}
+
+@media only screen and (max-width: 1260px) {
+    .section-banner {
+        padding-left: 75px;
+    }
+
+    .banner-img {
+        width: auto;
+    }
+
+    .banner-paragraph {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    .section-banner {
+        padding-top: 75px;
+    }
+
+    .banner-header {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    .page-header {
+        padding: 32px 23px;
+    }
+
+    .hamburger-menu {
+        cursor: pointer;
+        display: block;
+        float: right;
+        margin-right: -7px;
+    }
+
+    .page-navigation ul {
+        display: none;
+    }
+
+    .page-welcome {
+        padding-top: 140px;
+        height: 538px;
+        background-image: url("images/mobile/image-header.jpg");
+    }
+
+    .page-welcome h1 {
+        font-size: var(--bigger-font-size);
+        letter-spacing: 6px;
+    }
+
+    .arrow-icon {
+        top: 64.6%;
+    }
+
+    .page-section {
+        flex-direction: column;
+    }
+
+    .page-section.first {
+        flex-direction: column-reverse;
+    }
+
+    .section-divider {
+        width: 100%;
+        height: auto;
+    }
+
+    .section-banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 62px 36px;
+    }
+
+    .banner-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .banner-header {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 23px;
+    }
+
+    .banner-paragraph {
+        width: 320px;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .section-features {
+        padding: 393px 0 0;
+        background-size: cover;
+    }
+
+    .section-features.first {
+        background-image: url("images/mobile/image-graphic-design.jpg");
+    }
+
+    .section-features.second {
+        background-image: url("images/mobile/image-photography.jpg");
+    }
+
+    .section-feedback {
+        margin: 63px 0 83px;
+        height: auto;
+    }
+
+    .section-feedback h4 {
+        font-size: 15px;
+        margin-bottom: 66px;
+    }
+
+    .feedback-profile-list {
+        flex-direction: column;
+        gap: 68px;
+    }
+
+    .feedback-profile {
+        width: 85%;
+    }
+
+    .profile-image {
+        margin-bottom: 32px;
+
+    }
+
+    .profile-comment {
+        margin-bottom: 32px;
+    }
+
+    .page-illustrations {
+        flex-wrap: wrap;
+    }
+    .page-illustrations img{
+        width: 50%;
+    }
+
 }
