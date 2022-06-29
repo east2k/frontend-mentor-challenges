@@ -97,6 +97,11 @@
     border-radius: 30px;
 }
 
+.navigation-button:hover {
+    color: var(--white);
+    background-color: #6ed0ff;
+}
+
 .page-welcome {
     position: relative;
     padding-top: 195px;
@@ -173,6 +178,17 @@
     border: none;
 }
 
+.banner-button:hover {
+    box-shadow: 0px -7px 0px 0px #fad400bf inset;
+}
+
+.banner-button.second {
+    box-shadow: 0px -7px 0px 0px #fe786742 inset;
+}
+
+.banner-button.second:hover {
+    box-shadow: 0px -7px 0px 0px #fe7867e6 inset;
+}
 
 .banner-img {
     width: 100%;
@@ -323,6 +339,10 @@
     text-decoration: none;
 }
 
+.page-list ul li a:hover {
+    color: var(--white);
+}
+
 .social-media-list {
     display: flex;
     flex-direction: row;
@@ -330,4 +350,8 @@
     justify-content: center;
     gap: 30px;
     margin-bottom: 71px;
+}
+
+.social-link:hover {
+    filter: brightness(10);
 }
