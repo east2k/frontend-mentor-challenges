@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://frontend-mentor-challenges-henna.vercel.app/challenge-lists/sunnyside-agency-landing-page/index.html](https://frontend-mentor-challenges-henna.vercel.app/challenge-lists/sunnyside-agency-landing-page/index.html)
+- Live Site URL: [https://frontend-mentor-challenges-henna.vercel.app/challenge-lists/sunny-side-agency-landing-page/index.html](https://frontend-mentor-challenges-henna.vercel.app/challenge-lists/sunny-side-agency-landing-page/index.html)
 
 ## Author
 
