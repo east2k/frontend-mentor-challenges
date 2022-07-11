@@ -102,6 +102,11 @@ body {
     letter-spacing: 0.3px;
 }
 
+.dropdown-label:hover{
+    color: var(--white);
+    text-decoration: underline;
+}
+
 .dropdown-label img {
     margin-left: 5px;
 }
@@ -130,6 +135,11 @@ body {
 .credential-button.register {
     color: var(--light-red);
     background-color: var(--white);
+}
+
+.credential-button.register:hover {
+    color: var(--gray);
+    background: var(--very-light-red);
 }
 
 .section-welcome {
@@ -182,10 +192,20 @@ body {
     background-color: var(--white);
 }
 
+.welcome-button.start:hover {
+    color: var(--gray);
+    background: var(--very-light-red);
+}
+
 .welcome-button.learn {
     border: 1px solid var(--white);
     color: var(--white);
     background-color: transparent;
+}
+
+.welcome-button.learn:hover {
+    color: var(--light-red);
+    background-color: var(--white);
 }
 
 .section-features {
@@ -307,19 +327,42 @@ body {
 
 .page-footer {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: row;
     height: 341px;
     background-color: var(--very-dark-black-blue);
     border-radius: 0 100px 0 0;
+    padding: 50px 90px;
 }
 
-.footer-content{
-    width: 25%;
+.footer-content {
+    margin-right: 200px;
 }
 
-.footer-link-list li a{
+.footer-content p {
+    color: var(--white);
+    font-size: var(--regular-font-size);
+    margin-bottom: 35px;
+}
+
+.footer-link-list {
+    list-style: none;
+}
+
+.footer-link-list li {
+    margin-bottom: 15px;
+}
+
+.footer-link-list li a {
     text-decoration: none;
     color: var(--gray);
+}
+
+.footer-link-list li:hover {
+    text-decoration: underline;
+}
+
+.footer-logo {
+    margin-right: 200px;
 }
