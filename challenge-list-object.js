@@ -191,6 +191,16 @@ const challengeList = [{
     frontendLink: "https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef",
     repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/sunny-side-agency-landing-page"
 }
+    , {
+    name: "Blogr Landing Page",
+    description: "Flex your layout muscles with this landing page challenge. You'll mostly be working with HTML & CSS for this project with a tiny bit of JS for the mobile menu.",
+    tags: ["Junior", "HTML", "CSS", "JS"],
+    image: "assets/thumbnails/blogr-landing-page.png",
+    liveLink: "challenge-lists/blogr-landing-page/index.html",
+    boxShadow: "#00000035",
+    frontendLink: "https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP",
+    repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/blogr-landing-page"
+}
     // , {
     //     name: "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
     //     description: "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
