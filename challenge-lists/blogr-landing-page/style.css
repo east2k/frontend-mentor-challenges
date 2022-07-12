@@ -63,7 +63,7 @@ body {
 }
 
 .mobile {
-    display: none;
+    display: none !important;
 }
 
 .page-header {
@@ -76,7 +76,7 @@ body {
     padding: 60px 166px;
 }
 
-.menu-logo {
+.menu-logo, .close-logo {
     display: none;
 }
 
@@ -99,6 +99,9 @@ body {
 }
 
 .dropdown-label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     cursor: pointer;
     color: var(--gray);
     font-size: var(--regular-font-size);
@@ -113,10 +116,21 @@ body {
 }
 
 .dropdown-label img {
+    width: auto;
+    height: 7px;
     margin-left: 5px;
+    transition: 150ms;
 }
 
-/* Change Later if adding script */
+.light-arrow {
+    display: block;
+}
+
+.dark-arrow {
+    display: none;
+}
+
+/* dropdown */
 .nav-dropdown {
     position: relative;
 }
@@ -128,7 +142,10 @@ body {
 .nav-dropdown.active .dropdown-label {
     color: var(--white);
     text-decoration: underline;
+}
 
+.nav-dropdown.active .dropdown-label img {
+    transform: rotate(180deg);
 }
 
 .dropdown-content {
@@ -412,6 +429,10 @@ body {
 }
 
 @media only screen and (max-width: 860px) {
+    .desktop {
+        display: none !important;
+    }
+
     .page-header {
         padding: 55px 24px;
     }
@@ -420,18 +441,9 @@ body {
         display: none;
     }
 
-    .page-credential-buttons {
-        display: none;
-    }
-
     .page-logo {
         width: auto;
         height: 33px;
-    }
-
-    .menu-logo {
-        display: block;
-        cursor: pointer;
     }
 
     .section-welcome {
@@ -505,7 +517,6 @@ body {
         width: 75%;
         text-align: center;
     }
-
 
     .section-banner {
         height: 630px;
@@ -610,4 +621,112 @@ body {
         margin-bottom: 7px;
     }
 
+    /* dropdown */
+
+    .menu-logo {
+        display: block;
+        cursor: pointer;
+    }
+
+    .close-logo {
+        cursor: pointer;
+    }
+
+    .page-header.expand .menu-logo {
+        display: none;
+    }
+
+    .page-header.expand .close-logo {
+        display: block;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 87%;
+        background-color: var(--white);
+        padding: 35px 10px;
+    }
+
+    .page-credential-buttons.mobile {
+        display: none;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        border-top: 1px solid var(--grayish-blue);
+    }
+
+    .page-header.expand .header-nav .nav-container,
+    .page-header.expand .header-nav .nav-container .page-credential-buttons {
+        display: flex !important;
+    }
+
+    .dropdown-label {
+        justify-content: center;
+        color: var(--very-dark-gray-blue);
+        font-family: var(--primary-font-family);
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+
+    .light-arrow {
+        display: none;
+    }
+
+    .dark-arrow {
+        display: block;
+    }
+
+    .nav-dropdown {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-dropdown.active .dropdown-label {
+        color: var(--very-dark-grayish-blue);
+        text-decoration: none;
+    }
+
+    .dropdown-content {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 90%;
+        background-color: #efeff1;
+        box-shadow: none;
+        border-radius: 0;
+        margin-bottom: 25px;
+    }
+
+    .dropdown-content a {
+        text-align: center;
+        color: var(--very-dark-grayish-blue);
+        font-size: var(--regular-font-size);
+        font-weight: var(--bold-font-weight);
+        font-family: var(--primary-font-family);
+    }
+
+    .dropdown-label:hover {
+        color: var(--very-dark-grayish-blue);
+        text-decoration: none;
+    }
+
+    /* dropdown end */
+
+    .credential-button.login {
+        color: var(--very-dark-black-blue);
+    }
+
+    .credential-button.register {
+        color: var(--white);
+        background: linear-gradient(90deg, var(--bg-very-light-red), var(--bg-light-red));
+    }
 }

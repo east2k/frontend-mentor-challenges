@@ -15,12 +15,15 @@
 </head>
 
 <body>
-  <header class="page-header">
+  <header class="page-header expand">
     <div class="header-nav">
       <img class="page-logo" src="images/logo.svg" alt="Logo Image">
       <nav class="nav-container">
         <div class="nav-dropdown">
-          <p class="dropdown-label">Product<img src="images/icon-arrow-light.svg" alt="Arrow Icon"></p>
+          <p class="dropdown-label">Product
+            <img class="light-arrow" src="images/icon-arrow-light.svg" alt="Arrow Icon">
+            <img class="dark-arrow" src="images/icon-arrow-dark.svg" alt="Arrow Icon">
+          </p>
           <div class="dropdown-content">
             <a href="#">Overview</a>
             <a href="#">Pricing</a>
@@ -30,7 +33,10 @@
           </div>
         </div>
         <div class="nav-dropdown">
-          <p class="dropdown-label">Company<img src="images/icon-arrow-light.svg" alt="Arrow Icon"></p>
+          <p class="dropdown-label">Company
+            <img class="light-arrow" src="images/icon-arrow-light.svg" alt="Arrow Icon">
+            <img class="dark-arrow" src="images/icon-arrow-dark.svg" alt="Arrow Icon">
+          </p>
           <div class="dropdown-content">
             <a href="#">About</a>
             <a href="#">Team</a>
@@ -39,20 +45,28 @@
           </div>
         </div>
         <div class="nav-dropdown">
-          <p class="dropdown-label">Connect<img src="images/icon-arrow-light.svg" alt="Arrow Icon"></p>
+          <p class="dropdown-label">Connect
+            <img class="light-arrow" src="images/icon-arrow-light.svg" alt="Arrow Icon">
+            <img class="dark-arrow" src="images/icon-arrow-dark.svg" alt="Arrow Icon">
+          </p>
           <div class="dropdown-content">
             <a href="#">Contact</a>
             <a href="#">Newsletter</a>
             <a href="#">LinkedIn</a>
           </div>
         </div>
+        <div class="page-credential-buttons mobile">
+          <button class="credential-button login">Login</button>
+          <button class="credential-button register">Sign Up</button>
+        </div>
       </nav>
     </div>
-    <div class="page-credential-buttons">
+    <div class="page-credential-buttons desktop">
       <button class="credential-button login">Login</button>
       <button class="credential-button register">Sign Up</button>
     </div>
-    <img src="images/icon-hamburger.svg" alt="Menu Logo">
+    <img class="menu-logo" src="images/icon-hamburger.svg" alt="Menu Logo">
+    <img class="close-logo" src="images/icon-close.svg" alt="Close Logo">
   </header>
   <main class="page-wrapper">
     <section class="page-section">
@@ -165,7 +179,8 @@
       </div>
     </footer>
   </main>
-  <script src="script.js"></script>
+  <script src="dropdown.js"></script>
+  <script src="mobile-expand.js"></script>
 </body>
 
 </html>
