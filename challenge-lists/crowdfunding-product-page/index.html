@@ -111,7 +111,7 @@
         </div>
       </div>
     </div>
-    <div class="page-modal-expanded expand success">
+    <div class="page-modal-expanded">
       <div class="modal-success">
         <img src="images/icon-check.svg" alt="Check Icon">
         <h2>Thanks for your support!</h2>
@@ -126,10 +126,12 @@
         <div class="modal-card-container">
           <div class="card modal">
             <div class="card-modal-items">
-              <input type="radio" name="pledge-radio">
+              <input type="radio" name="pledge-radio" id="no-reward">
               <div class="card-content">
                 <div class="card-header">
-                  <h3 class="pledge-name modal">Pledge with no reward</h3>
+                  <label for="no-reward">
+                    <h3 class="pledge-name modal">Pledge with no reward</h3>
+                  </label>
                 </div>
                 <p class="pledge-description modal">Choose to support us without a reward if you simply believe in our
                   project. As a backer, you will be signed up to receive product updates via email.</p>
@@ -147,11 +149,13 @@
           </div>
           <div class="card modal selected">
             <div class="card-modal-items">
-              <input type="radio" name="pledge-radio">
+              <input type="radio" name="pledge-radio" id="25-reward">
               <div class="card-content">
                 <div class="card-header">
                   <div class="card-header-details">
-                    <h3 class="pledge-name modal">Bamboo Stand</h3>
+                    <label for="25-reward">
+                      <h3 class="pledge-name modal">Bamboo Stand</h3>
+                    </label>
                     <p class="pledge-amount">Pledge $25 or more</p>
                   </div>
                   <p class="modal-pledge"><span class="modal-quantity">101</span>left</p>
@@ -172,11 +176,13 @@
           </div>
           <div class="card modal">
             <div class="card-modal-items">
-              <input type="radio" name="pledge-radio">
+              <input type="radio" name="pledge-radio" id="75-reward">
               <div class="card-content">
                 <div class="card-header">
                   <div class="card-header-details">
-                    <h3 class="pledge-name modal">Black Edition Stand</h3>
+                    <label for="75-reward">
+                      <h3 class="pledge-name modal">Black Edition Stand</h3>
+                    </label>
                     <p class="pledge-amount">Pledge $75 or more</p>
                   </div>
                   <p class="modal-pledge"><span class="modal-quantity">64</span>left</p>
@@ -197,11 +203,13 @@
           </div>
           <div class="card modal disabled">
             <div class="card-modal-items">
-              <input type="radio" name="pledge-radio" disabled>
+              <input type="radio" name="pledge-radio" disabled id="200-reward">
               <div class="card-content">
                 <div class="card-header">
                   <div class="card-header-details">
-                    <h3 class="pledge-name modal">Mahogany Special Edition</h3>
+                    <label for="200-reward">
+                      <h3 class="pledge-name modal">Mahogany Special Edition</h3>
+                    </label>
                     <p class="pledge-amount">Pledge $200 or more</p>
                   </div>
                   <p class="modal-pledge"><span class="modal-quantity">0</span>left</p>

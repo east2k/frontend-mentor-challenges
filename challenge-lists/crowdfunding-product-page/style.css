@@ -40,6 +40,10 @@ body {
     display: none;
 }
 
+.hamburger-logo, .close-menu-logo {
+    cursor: pointer;
+}
+
 /* header */
 
 .page-header {
@@ -147,6 +151,10 @@ body {
     background-color: var(--moderate-cyan);
 }
 
+.backproj:hover {
+    background-color: var(--dark-cyan);
+}
+
 .bookmark {
     display: flex;
     flex-direction: row;
@@ -157,6 +165,14 @@ body {
     font-weight: var(--bold-font-weight);
     color: var(--dark-gray);
     background-color: #f4f4f4;
+}
+
+.bookmark.marked {
+    color: var(--dark-cyan);
+}
+
+.bookmark.marked .bookmark-icon {
+    filter: invert(35%) sepia(89%) saturate(424%) hue-rotate(127deg) brightness(91%) contrast(87%);
 }
 
 .bookmark-icon {
@@ -286,6 +302,10 @@ body {
     color: #fff;
 }
 
+.pledge-button:hover {
+    background-color: var(--dark-cyan);
+}
+
 /* disabled card */
 
 .card.disabled {
@@ -342,6 +362,7 @@ body {
 }
 
 .modal-close-icon {
+    cursor: pointer;
     position: absolute;
     top: 32px;
     right: 31px;
@@ -373,6 +394,12 @@ body {
     margin-left: 22px;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 input[name="pledge-radio"] {
     width: 52px;
     height: 24px;
@@ -384,9 +411,15 @@ input[name="pledge-radio"]:checked {
     opacity: 1;
 }
 
+
 .pledge-name.modal {
+    cursor: pointer;
     font-size: var(--regular-font-size);
     font-weight: var(--bold-font-weight);
+}
+
+.pledge-name.modal:hover {
+    color: var(--moderate-cyan)
 }
 
 .card-header-details {
@@ -436,17 +469,26 @@ input[name="pledge-radio"]:checked {
     background-color: var(--moderate-cyan);
 }
 
+.continue-button:hover{
+    background-color: var(--dark-cyan);
+}
 
 .selected-pledge-amount {
     border: 1px solid #7a7a7a40;
     width: 100px;
     height: 47px;
+    outline: none;
     border-radius: 35px;
     margin-right: 13px;
     text-align: center;
     font-size: 15px;
     font-weight: var(--bold-font-weight);
     padding: 0 25px 0 35px;
+}
+
+.selected-pledge-amount:hover,
+.selected-pledge-amount:focus {
+    border-color: var(--dark-cyan);
 }
 
 .dollar-sign {
@@ -494,7 +536,7 @@ input[name="pledge-radio"]:checked {
     margin-bottom: 15px;
 }
 
-.modal-success p{
+.modal-success p {
     color: var(--dark-gray);
     font-size: var(--regular-font-size);
     font-weight: var(--medium-font-weight);
@@ -503,13 +545,17 @@ input[name="pledge-radio"]:checked {
     margin-bottom: 33px;
 }
 
-.success-button{
+.success-button {
     width: 106px;
     height: 49px;
     font-size: var(--small-font-size);
     font-weight: var(--medium-font-weight);
     color: var(--white);
     background-color: var(--moderate-cyan);
+}
+
+.success-button:hover{
+    background-color: var(--dark-cyan);
 }
 
 /* modal-success end */
