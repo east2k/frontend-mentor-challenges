@@ -289,7 +289,6 @@ body {
     justify-content: space-between;
 }
 
-
 .pledge-quantity {
     display: flex;
     align-items: center;
@@ -572,3 +571,281 @@ input[name="pledge-radio"]:checked {
 /* expand-modal end */
 
 /* main end */
+
+/* media query */
+
+@media only screen and (max-width:990px) {
+    .mobile, .hamburger-logo {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .page-content {
+        top: -56px;
+    }
+
+    .page-header {
+        padding: 32px 24px;
+    }
+
+    .page-header.active {
+        height: 100%;
+        align-items: flex-start;
+    }
+
+    .page-header.active .hamburger-logo {
+        display: none;
+    }
+
+    .page-header.active .close-menu-logo {
+        display: block;
+    }
+
+    .nav-list-container.active {
+        display: flex;
+    }
+
+    .nav-list-container {
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: center;
+        top: 88px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 87%;
+        border-radius: 8px;
+        background-color: var(--white);
+
+    }
+
+    .nav-link{
+        color: var(--black);
+        font-size: 18px;
+        font-weight: var(--medium-font-weight);
+        margin: 0;
+        padding: 25px;
+    }
+
+    .nav-link:nth-child(2){
+        border: 1px solid #7a7a7a4a;
+        border-left: none;
+        border-right: none;
+    }
+
+    .content-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .brand-header {
+        width: 80%;
+        font-size: 20px;
+        margin: 2px 0 16px;
+    }
+
+    .brand-description {
+        font-size: 14px;
+        line-height: 25px;
+        margin-bottom: 22px;
+    }
+
+    .backproj {
+        width: 214px;
+    }
+
+    .bookmark {
+        overflow: hidden;
+        width: 56px;
+        margin-left: 10px;
+    }
+
+    .bookmark-icon {
+        margin: 0;
+    }
+
+    .box-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .detail-box {
+        width: 100%;
+        padding: 0 !important;
+    }
+
+    .box-container {
+        margin-bottom: 25px;
+    }
+
+    .box-header {
+        margin-bottom: 9px;
+    }
+
+    .box-info {
+        font-size: 14px;
+    }
+
+    .center-box {
+        width: 33%;
+        border: none;
+        border-top: 1px solid #7a7a7a4a;
+        border-bottom: 1px solid #7a7a7a4a;
+        padding: 25px 0 !important;
+    }
+
+    .section {
+        width: 87%;
+        padding: 32px 22px 38px;
+        border: 0.5px solid #7a7a7a1f;
+        border-radius: 5px;
+    }
+
+    .body-header {
+        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom: 23px;
+    }
+
+    .body-paragraph {
+        font-size: 14px;
+        font-weight: var(--medium-font-weight) !important;
+        line-height: 24px;
+        margin-bottom: 26px;
+    }
+
+    .card {
+        padding: 18px 20px 28px;
+    }
+
+    .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .pledge-name {
+        font-size: 14px;
+        margin-bottom: 7px;
+    }
+
+    .pledge-amount {
+        font-size: 14px;
+    }
+
+    .pledge-description {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .card-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .pledge-quantity {
+        margin-bottom: 25px;
+    }
+
+    /* query modal */
+    .page-modal-container {
+        top: 121px;
+        width: 87%;
+        padding: 30px 23px;
+    }
+
+    .modal-header {
+        font-size: 18px;
+        margin-bottom: 27px;
+    }
+
+    .modal-close-icon {
+        top: 36px;
+        right: 23px;
+    }
+
+    .modal-paragraph {
+        font-size: 14px;
+        line-height: 23px;
+        margin-bottom: 25px;
+    }
+
+    .pledge-name.modal {
+        font-size: 14px;
+    }
+
+    .pledge-description.modal {
+        position: relative;
+        left: -36px;
+        font-size: 13px !important;
+        width: 120%;
+        font-size: 14px !important;
+    }
+
+    input[name="pledge-radio"] {
+        width: 102px;
+        height: 24px;
+        margin-top: 2px;
+        opacity: 0.5;
+    }
+
+    .card-header-details {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .card-content {
+        margin-left: 15px;
+    }
+
+    .modal-pledge.mobile {
+        position: relative;
+        left: -36px;
+        margin-bottom: 30px;
+    }
+
+    .card-footer.modal {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-footer.modal p {
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    /* mobile success */
+    .modal-success {
+        width: 87%;
+        height: auto;
+        padding: 32px;
+    }
+
+    .modal-success img {
+        width: 64px;
+        margin-bottom: 23px;
+    }
+
+    .modal-success h2 {
+        font-size: 18px;
+    }
+
+    .modal-success p {
+        font-size: 13px;
+        line-height: 25px;
+        margin-bottom: 32px;
+    }
+
+    /* mobile success end */
+
+    /* query model end */
+}

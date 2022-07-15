@@ -16,9 +16,11 @@
   <header class="page-header">
     <img class="page-logo" src="images/logo.svg" alt="Page logo">
     <nav class="header-nav">
-      <a class="nav-link" href="#">About</a>
-      <a class="nav-link" href="#">Discover</a>
-      <a class="nav-link" href="#">Get Started</a>
+      <div class="nav-list-container">
+        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#">Discover</a>
+        <a class="nav-link" href="#">Get Started</a>
+      </div>
       <img class="hamburger-logo" src="images/icon-hamburger.svg" alt="Menu Icon">
       <img class="close-menu-logo" src="images/icon-close-menu.svg" alt="Close Icon">
     </nav>
@@ -158,10 +160,11 @@
                     </label>
                     <p class="pledge-amount">Pledge $25 or more</p>
                   </div>
-                  <p class="modal-pledge"><span class="modal-quantity low">101</span>left</p>
+                  <p class="modal-pledge desktop"><span class="modal-quantity low">101</span>left</p>
                 </div>
                 <p class="pledge-description modal">You get an ergonomic stand made of natural bamboo. You've helped us
                   launch our promotional campaign, and you’ll be added to a special Backer member list.</p>
+                <p class="modal-pledge mobile"><span class="modal-quantity low">101</span>left</p>
               </div>
             </div>
             <div class="card-footer modal">
@@ -185,10 +188,11 @@
                     </label>
                     <p class="pledge-amount">Pledge $75 or more</p>
                   </div>
-                  <p class="modal-pledge"><span class="modal-quantity medium">64</span>left</p>
+                  <p class="modal-pledge desktop"><span class="modal-quantity medium">64</span>left</p>
                 </div>
                 <p class="pledge-description modal">You get a Black Special Edition computer stand and a personal thank
                   you. You’ll be added to our Backer member list. Shipping is included.</p>
+                <p class="modal-pledge mobile"><span class="modal-quantity medium">64</span>left</p>
               </div>
             </div>
             <div class="card-footer modal">
@@ -212,10 +216,11 @@
                     </label>
                     <p class="pledge-amount">Pledge $200 or more</p>
                   </div>
-                  <p class="modal-pledge"><span class="modal-quantity high">0</span>left</p>
+                  <p class="modal-pledge desktop"><span class="modal-quantity high">0</span>left</p>
                 </div>
                 <p class="pledge-description modal">You get two Special Edition Mahogany stands, a Backer T-Shirt, and a
                   personal thank you. You’ll be added to our Backer member list. Shipping is included.</p>
+                <p class="modal-pledge mobile"><span class="modal-quantity high">0</span>left</p>
               </div>
             </div>
             <div class="card-footer modal">
@@ -232,6 +237,7 @@
       </div>
     </div>
   </main>
+  <script src="nav-menu.js"></script>
   <script src="pledge-details-object.js"></script>
   <script src="update-pledge-detail.js"></script>
   <script src="expand-modal.js"></script>
