@@ -197,9 +197,19 @@ const challengeList = [{
     tags: ["Junior", "HTML", "CSS", "JS"],
     image: "assets/thumbnails/blogr-landing-page.png",
     liveLink: "challenge-lists/blogr-landing-page/index.html",
-    boxShadow: "#00000035",
+    boxShadow: "#3d3f616b",
     frontendLink: "https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP",
     repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/blogr-landing-page"
+}
+    , {
+    name: "Crowdfunding Product Page",
+    description: "This challenge will test both your layout and state management skills. As visitors make pledges, your goal is to keep track of the changes.",
+    tags: ["Junior", "HTML", "CSS", "JS"],
+    image: "assets/thumbnails/crowdfunding-product-page.png",
+    liveLink: "challenge-lists/crowdfunding-product-page/index.html",
+    boxShadow: "#2f2e313d",
+    frontendLink: "https://www.frontendmentor.io/challenges/crowdfunding-product-page-7uvcZe7ZR",
+    repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/crowdfunding-product-page"
 }
     // , {
     //     name: "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
