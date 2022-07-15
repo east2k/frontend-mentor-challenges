@@ -23,6 +23,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -143,6 +144,7 @@ body {
 }
 
 .backproj {
+    display: block;
     width: 201px;
     height: 56px;
     color: #fafafa;
@@ -211,11 +213,17 @@ body {
     margin-bottom: 5px;
 }
 
+.total-amount::before {
+    content: '$';
+
+}
+
 .box-info {
     font-size: 15px;
 }
 
 .progress-bar {
+    overflow: hidden;
     width: 100%;
     height: 13px;
     background: #f4f4f4;
@@ -223,10 +231,11 @@ body {
 }
 
 .bar {
-    width: 78.5%;
+    width: 89.91%;
     height: 12px;
     background-color: var(--moderate-cyan);
     border-radius: 35px;
+    transition: 500ms;
 }
 
 /* content detail end*/
@@ -469,7 +478,7 @@ input[name="pledge-radio"]:checked {
     background-color: var(--moderate-cyan);
 }
 
-.continue-button:hover{
+.continue-button:hover {
     background-color: var(--dark-cyan);
 }
 
@@ -554,7 +563,7 @@ input[name="pledge-radio"]:checked {
     background-color: var(--moderate-cyan);
 }
 
-.success-button:hover{
+.success-button:hover {
     background-color: var(--dark-cyan);
 }
 
