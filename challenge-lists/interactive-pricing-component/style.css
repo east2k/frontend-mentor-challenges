@@ -59,6 +59,7 @@ body {
 .content-header h1 {
     color: var(--dark-desaturated-blue);
     font-size: 28px;
+    text-align: center;
     text-shadow: 0px 0px 0px var(--dark-desaturated-blue);
     margin-bottom: 11px;
 }
@@ -243,6 +244,10 @@ body {
     text-align: center;
 }
 
+.discount::after {
+    content: ' discount';
+}
+
 .content-footer {
     display: flex;
     align-items: center;
@@ -277,4 +282,89 @@ body {
 
 .footer-button:hover {
     color: var(--light-grayish-blue);
+}
+
+@media only screen and (max-width: 1000px) {
+    .page-content {
+        width: 100%;
+        padding: 89px 25px;
+        background-position: 50% 7.8%;
+    }
+
+    .content-box {
+        width: 100%;
+    }
+
+    .content-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content-header h1 {
+        font-size: 20px;
+        margin-bottom: 7px;
+    }
+
+    .content-header p {
+        width: 55%;
+        font-size: 13px;
+        line-height: 23px;
+        margin-bottom: 65px;
+    }
+
+    .content-body {
+        padding: 34px 24px;
+    }
+
+    .body-pricing {
+        flex-direction: column;
+    }
+
+    .pricing-views {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .pricing-total {
+        position: relative;
+        bottom: -89px;
+        font-size: 31px;
+    }
+
+    .pricing-total::after {
+        margin: 2px 3px 0 9px;
+        font-size: 14px;
+    }
+
+    .slider-container {
+        position: relative;
+        top: -42px;
+    }
+
+    .billing-container {
+        padding: 0;
+        margin-top: 63px;
+        justify-content: center;
+    }
+
+    .discount {
+        width: 40px;
+    }
+
+    .discount::after {
+        content: '';
+    }
+
+    .content-footer {
+        flex-direction: column;
+    }
+
+    .footer-offers {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
