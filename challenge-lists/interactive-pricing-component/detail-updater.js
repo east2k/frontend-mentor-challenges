@@ -15,7 +15,7 @@ const updateDetails = () => {
 
     const currentValue = parseInt(slider.value);
     const calculatedValue = currentValue * 12 - (currentValue * 12) * 0.25;
-    const currentLowVal = currentValue / slider.min;
+    const currentLowVal = (currentValue / slider.min) - 1;
 
     if (!billing.status) {
         checkVal(currentLowVal);
