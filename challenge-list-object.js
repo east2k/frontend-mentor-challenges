@@ -211,6 +211,16 @@ const challengeList = [{
     frontendLink: "https://www.frontendmentor.io/challenges/crowdfunding-product-page-7uvcZe7ZR",
     repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/crowdfunding-product-page"
 }
+    , {
+    name: "Interactive pricing component",
+    description: "In this project, you'll build out an interactive pricing component complete with custom range input slider and pricing toggle. A perfect way to test your JS skills!",
+    tags: ["Junior", "HTML", "CSS", "JS"],
+    image: "assets/thumbnails/interactive-pricing-component.png",
+    liveLink: "challenge-lists/interactive-pricing-component/index.html",
+    boxShadow: "#e9f0ff",
+    frontendLink: "https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8",
+    repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/interactive-pricing-component"
+}
     // , {
     //     name: "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
     //     description: "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
