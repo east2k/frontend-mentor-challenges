@@ -221,6 +221,16 @@ const challengeList = [{
     frontendLink: "https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8",
     repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/interactive-pricing-component"
 }
+    , {
+    name: "Coding bootcamp testimonials slider",
+    description: "This challenge will be a nice test if you're new to JavaScript. It's also a great opportunity to play around with content animations and transitions.",
+    tags: ["Junior", "HTML", "CSS", "JS"],
+    image: "assets/thumbnails/coding-bootcamp-testimonials-slider.png",
+    liveLink: "challenge-lists/coding-bootcamp-testimonials-slider/index.html",
+    boxShadow: "#2020484a",
+    frontendLink: "https://www.frontendmentor.io/challenges/coding-bootcamp-testimonials-slider-4FNyLA8JL",
+    repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/coding-bootcamp-testimonials-slider"
+}
     // , {
     //     name: "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
     //     description: "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
