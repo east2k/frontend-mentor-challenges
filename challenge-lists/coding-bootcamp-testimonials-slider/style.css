@@ -150,7 +150,9 @@
 
 @media only screen and (max-width: 900px) {
     .page-wrapper {
-        height: auto;
+        height: 100%;
+        min-height: 100vh;
+        background-size: contain;
     }
 
     .page-content {
@@ -158,7 +160,7 @@
         justify-content: flex-start;
         height: auto;
         padding: 54px 7px 80px;
-        background-size: 85%;
+        background-size: 330px;
         background-position: 50% 6%;
     }
 
