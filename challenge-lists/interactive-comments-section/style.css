@@ -200,7 +200,6 @@ body {
     color: var(--soft-red);
 }
 
-
 .comment-text {
     color: var(--grayish-blue);
     line-height: 24px;
@@ -273,6 +272,24 @@ body {
     height: 100%;
 }
 
+.comment-content.edit .comment-text {
+    display: block;
+}
+
+.comment-content.edit .comment-box.edit,
+.comment-content.edit .comment-input-button.edit {
+    display: none;
+}
+
+.comment-content.edit.active-edit .comment-text {
+    display: none;
+}
+
+.comment-content.edit.active-edit .comment-box.edit,
+.comment-content.edit.active-edit .comment-input-button.edit {
+    display: block;
+}
+
 .comment-box {
     resize: none;
     overflow: auto;
@@ -286,6 +303,10 @@ body {
     padding: 13px 23px;
     margin-right: 15px;
     line-height: 23px;
+}
+
+.comment-reply {
+    overflow: hidden;
 }
 
 .comment-box:focus {

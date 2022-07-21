@@ -17,101 +17,13 @@
   <main class="page-wrapper">
     <div class="page-content">
       <div class="content-card-comment-container">
-        <div class="content-card-comment">
-          <div class="comment-rating">
-            <div class="rating-icon">
-              <img class="icon-plus" src="images/icon-plus.svg" alt="Plus Icon">
-            </div>
-            <p class="rating-current">12</p>
-            <div class="rating-icon">
-              <img class="icon-minus" src="images/icon-minus.svg" alt="Minus Icon">
-            </div>
-          </div>
-          <div class="comment-body">
-            <div class="comment-header">
-              <div class="header-user">
-                <div class="user-image-container">
-                  <img class="user-image" src="images/avatars/image-amyrobson.png" alt="User Image">
-                </div>
-                <p class="user-name">amyrobson</p>
-                <p class="user-timespan">
-                  <span class="timespan-number">1</span>
-                  <span class="timespan-age">month</span>
-                  ago
-                </p>
-              </div>
-
-              <div class="header-interact">
-                <div class="interact-reply">
-                  <img class="reply-icon" src="images/icon-reply.svg" alt="Reply Icon">
-                  <p class="reply-text">Reply</p>
-                </div>
-              </div>
-            </div>
-            <div class="comment-content">
-              <p class="comment-text">
-                Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've
-                nailed the design and the responsiveness at various breakpoints works really well.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- reply to main comment input -->
-        <!-- <div class="content-card-comment input input-reply">
-          <div class="comment-input-image-container">
-            <img class="comment-input-image" src="images/avatars/image-juliusomo.png" alt="User Image">
-          </div>
-          <textarea class="comment-box" placeholder="Add a comment..."></textarea>
-          <button class="comment-input-button">Reply</button>
-        </div> -->
-        <!-- reply to main comment input end -->
-        <div class="content-card-comment">
-          <div class="comment-rating">
-            <div class="rating-icon">
-              <img class="icon-plus" src="images/icon-plus.svg" alt="Plus Icon">
-            </div>
-            <p class="rating-current">5</p>
-            <div class="rating-icon">
-              <img class="icon-minus" src="images/icon-minus.svg" alt="Minus Icon">
-            </div>
-          </div>
-          <div class="comment-body">
-            <div class="comment-header">
-              <div class="header-user">
-                <div class="user-image-container">
-                  <img class="user-image" src="images/avatars/image-maxblagun.png" alt="User Image">
-                </div>
-                <p class="user-name">maxblagun</p>
-                <p class="user-timespan">
-                  <span class="timespan-number">2</span>
-                  <span class="timespan-age plural">week</span>
-                  ago
-                </p>
-              </div>
-
-              <div class="header-interact">
-                <div class="interact-reply">
-                  <img class="reply-icon" src="images/icon-reply.svg" alt="Reply Icon">
-                  <p class="reply-text">Reply</p>
-                </div>
-              </div>
-            </div>
-            <div class="comment-content">
-              <p class="comment-text">
-                Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to
-                dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- reply to main comment-->
-        <div class="comment-reply">
-          <div class="content-card-comment reply">
+        <div class="active-comment">
+          <div class="content-card-comment">
             <div class="comment-rating">
               <div class="rating-icon">
                 <img class="icon-plus" src="images/icon-plus.svg" alt="Plus Icon">
               </div>
-              <p class="rating-current">4</p>
+              <p class="rating-current">12</p>
               <div class="rating-icon">
                 <img class="icon-minus" src="images/icon-minus.svg" alt="Minus Icon">
               </div>
@@ -120,12 +32,12 @@
               <div class="comment-header">
                 <div class="header-user">
                   <div class="user-image-container">
-                    <img class="user-image" src="images/avatars/image-ramsesmiron.png" alt="User Image">
+                    <img class="user-image" src="images/avatars/image-amyrobson.png" alt="User Image">
                   </div>
-                  <p class="user-name">ramsesmiron</p>
+                  <p class="user-name">amyrobson</p>
                   <p class="user-timespan">
                     <span class="timespan-number">1</span>
-                    <span class="timespan-age">week</span>
+                    <span class="timespan-age">month</span>
                     ago
                   </p>
                 </div>
@@ -139,10 +51,105 @@
               </div>
               <div class="comment-content">
                 <p class="comment-text">
-                  <span class="text-user-reply">maxblagun</span> If you're still new, I'd recommend focusing on the
-                  fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a
-                  solid foundation first.
+                  Impressive! Though it seems the drag feature could be improved. But overall it looks incredible.
+                  You've nailed the design and the responsiveness at various breakpoints works really well.
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- reply to main comment input -->
+        <!-- <div class="content-card-comment input input-reply">
+          <div class="comment-input-image-container">
+            <img class="comment-input-image" src="images/avatars/image-juliusomo.png" alt="User Image">
+          </div>
+          <textarea class="comment-box" placeholder="Add a comment..."></textarea>
+          <button class="comment-input-button">Reply</button>
+        </div> -->
+        <!-- reply to main comment input end -->
+        <div class="active-comment">
+          <div class="content-card-comment">
+            <div class="comment-rating">
+              <div class="rating-icon">
+                <img class="icon-plus" src="images/icon-plus.svg" alt="Plus Icon">
+              </div>
+              <p class="rating-current">5</p>
+              <div class="rating-icon">
+                <img class="icon-minus" src="images/icon-minus.svg" alt="Minus Icon">
+              </div>
+            </div>
+            <div class="comment-body">
+              <div class="comment-header">
+                <div class="header-user">
+                  <div class="user-image-container">
+                    <img class="user-image" src="images/avatars/image-maxblagun.png" alt="User Image">
+                  </div>
+                  <p class="user-name">maxblagun</p>
+                  <p class="user-timespan">
+                    <span class="timespan-number">2</span>
+                    <span class="timespan-age plural">week</span>
+                    ago
+                  </p>
+                </div>
+
+                <div class="header-interact">
+                  <div class="interact-reply">
+                    <img class="reply-icon" src="images/icon-reply.svg" alt="Reply Icon">
+                    <p class="reply-text">Reply</p>
+                  </div>
+                </div>
+              </div>
+              <div class="comment-content">
+                <p class="comment-text">
+                  Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want
+                  to dive into React as well soon. Perhaps you can give me an insight on where I can learn React?
+                  Thanks!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- reply to main comment-->
+        <div class="comment-reply">
+          <div class="active-comment">
+            <div class="content-card-comment reply">
+              <div class="comment-rating">
+                <div class="rating-icon">
+                  <img class="icon-plus" src="images/icon-plus.svg" alt="Plus Icon">
+                </div>
+                <p class="rating-current">4</p>
+                <div class="rating-icon">
+                  <img class="icon-minus" src="images/icon-minus.svg" alt="Minus Icon">
+                </div>
+              </div>
+              <div class="comment-body">
+                <div class="comment-header">
+                  <div class="header-user">
+                    <div class="user-image-container">
+                      <img class="user-image" src="images/avatars/image-ramsesmiron.png" alt="User Image">
+                    </div>
+                    <p class="user-name">ramsesmiron</p>
+                    <p class="user-timespan">
+                      <span class="timespan-number">1</span>
+                      <span class="timespan-age">week</span>
+                      ago
+                    </p>
+                  </div>
+
+                  <div class="header-interact">
+                    <div class="interact-reply">
+                      <img class="reply-icon" src="images/icon-reply.svg" alt="Reply Icon">
+                      <p class="reply-text">Reply</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="comment-content">
+                  <p class="comment-text">
+                    <span class="text-user-reply">maxblagun</span> If you're still new, I'd recommend focusing on the
+                    fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay
+                    a solid foundation first.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -189,12 +196,23 @@
                   </div>
                 </div>
               </div>
-              <div class="comment-content">
+              <!-- <div class="comment-content">
                 <p class="comment-text">
                   <span class="text-user-reply">ramsesmiron</span>
                   I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the
                   newest library/ framework. But the fundamentals are what stay constant.
                 </p>
+              </div> -->
+
+              <div class="comment-content edit">
+                <p class="comment-text">
+                  <span class="text-user-reply">ramsesmiron</span>
+                  I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the
+                  newest library/ framework. But the fundamentals are what stay constant.
+                </p>
+                <textarea class="comment-box edit">@ramsesmiron I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/ framework. But the fundamentals are what stay constant.
+                </textarea>
+                <button class="comment-input-button edit">Update</button>
               </div>
             </div>
           </div>
@@ -254,9 +272,10 @@
     </div>
   </main>
   <script src="comment-list-object.js"></script>
-  <script src="add-comment.js"></script>
   <script src="create-reply-box.js"></script>
   <script src="reply-comment.js"></script>
+  <script src="add-comment.js"></script>
+  <script src="edit-comment.js"></script>
 </body>
 
 </html>
