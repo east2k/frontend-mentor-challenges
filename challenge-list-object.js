@@ -231,6 +231,26 @@ const challengeList = [{
     frontendLink: "https://www.frontendmentor.io/challenges/coding-bootcamp-testimonials-slider-4FNyLA8JL",
     repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/coding-bootcamp-testimonials-slider"
 }
+    //     , {
+    //     name: "Interactive comments section",
+    //     description: "This is project will put your JavaScript skills to the test. We provide a JSON file to pull the data, but it's also a perfect project to build as a full-stack CRUD app!",
+    //     tags: ["Junior", "HTML", "CSS"],
+    //     image: "assets/thumbnails/interactive-comments-section.png",
+    //     liveLink: "challenge-lists/interactive-comments-section/index.html",
+    //     boxShadow: "#00000035",
+    //     frontendLink: "https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9",
+    //     repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/interactive-comments-section"
+    // }
+    // , {
+    //     name: "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+    //     description: "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+    //     tags: ["Junior", "HTML", "CSS"],
+    //     image: "assets/thumbnails/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.png",
+    //     liveLink: "challenge-lists/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee/index.html",
+    //     boxShadow: "#00000035",
+    //     frontendLink: "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+    //     repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+    // }
     // , {
     //     name: "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
     //     description: "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
