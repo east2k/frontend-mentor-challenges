@@ -231,6 +231,16 @@ const challengeList = [{
     frontendLink: "https://www.frontendmentor.io/challenges/coding-bootcamp-testimonials-slider-4FNyLA8JL",
     repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/coding-bootcamp-testimonials-slider"
 }
+    , {
+    name: "Rock, Paper, Scissors game",
+    description: "This challenge will test your HTML, CSS and JavaScript skills. There's even a Rock, Paper, Scissors, Lizard, Spock version if you really want to challenge yourself.",
+    tags: ["Advanced", "HTML", "CSS", "JS"],
+    image: "assets/thumbnails/rock-paper-scissors.png",
+    liveLink: "challenge-lists/rock-paper-scissors/index.html",
+    boxShadow: "#00000035",
+    frontendLink: "https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH",
+    repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/rock-paper-scissors"
+}
     //     , {
     //     name: "Interactive comments section",
     //     description: "This is project will put your JavaScript skills to the test. We provide a JSON file to pull the data, but it's also a perfect project to build as a full-stack CRUD app!",
@@ -240,16 +250,6 @@ const challengeList = [{
     //     boxShadow: "#00000035",
     //     frontendLink: "https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9",
     //     repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/interactive-comments-section"
-    // }
-    // , {
-    //     name: "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
-    //     description: "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
-    //     tags: ["Junior", "HTML", "CSS"],
-    //     image: "assets/thumbnails/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.png",
-    //     liveLink: "challenge-lists/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee/index.html",
-    //     boxShadow: "#00000035",
-    //     frontendLink: "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
-    //     repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
     // }
     // , {
     //     name: "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
