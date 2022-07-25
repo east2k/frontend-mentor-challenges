@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+</head>
+
+<body>
+
+  <main class="page-wrapper">
+    <div class="page-content">
+      <header class="content-header">
+        <div class="header-title">
+          <p>Rock</p>
+          <p>Paper</p>
+          <p>Scissors</p>
+        </div>
+        <div class="header-score">
+          <p class="score-label">Score</p>
+          <h1 class="score-value">0</h1>
+        </div>
+      </header>
+      <div class="content-container">
+        <div class="container-chips">
+          <div class="chip paper">
+            <div class="chip-image">
+              <img src="images/icon-paper.svg">
+            </div>
+          </div>
+          <div class="chip scissors">
+            <div class="chip-image">
+              <img src="images/icon-scissors.svg">
+            </div>
+          </div>
+          <div class="chip rock">
+            <div class="chip-image">
+              <img src="images/icon-rock.svg">
+            </div>
+          </div>
+        </div>
+        <div class="arena-container">
+          <section class="displayed-chip">
+            <h1 class="displayed-label">You Picked</h1>
+            <div class="chip player">
+              <div class="chip-image">
+                <img src="images/icon-scissors.svg" alt="Icon Image">
+              </div>
+            </div>
+          </section>
+          <div class="status-modal">
+            <h1></h1>
+            <button class="modal-btn">Play Again</button>
+          </div>
+          <section class="displayed-chip">
+            <h1 class="displayed-label">The House Picked</h1>
+            <div class="chip house none">
+              <div class="chip-image">
+                <img src="">
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <footer class="content-footer">
+        <button class="open-rules-btn">Rules</button>
+      </footer>
+      <div class="rules-modal">
+        <div class="rules-modal-content">
+          <h2>Rules</h2>
+          <img class="rules-img" src="images/image-rules.svg" alt="Rules img">
+          <img class="close-modal" src="images/icon-close.svg" alt="Close Icon">
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="open-rules.js"></script>
+  <script src="states.js"></script>
+  <script src="main.js"></script>
+  <script src="reset.js"></script>
+</body>
+
+</html>
