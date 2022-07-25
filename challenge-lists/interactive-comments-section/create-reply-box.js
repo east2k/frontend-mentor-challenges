@@ -1,4 +1,5 @@
 const activeComment = document.querySelectorAll(".active-comment");
+const commentCard = document.querySelectorAll(".content-card-comment");
 
 const createReplyBox = (index) => {
     const cardCommentInputReplyDiv = document.createElement("div");
@@ -30,9 +31,13 @@ const createReplyBox = (index) => {
     // cardCommentInputReplyDiv.after(reply);
     // cardCommentContainer.insertBefore(cardCommentInputReplyDiv, cardCommentContainer.children[index + 1]);
     // commentCard[index].parentElement.insertBefore
-    if(activeComment[index].children[0].classList.contains("reply")){
+    if (activeComment[index].children[0].classList.contains("reply")) {
         cardCommentInputReplyDiv.classList.add("reply");
     }
+    if (activeComment[index].children.length > 2) {
+        console.log("true")
+        commentCard[index].insertBefore(cardCommentInputReplyDiv, commentCard[index]);
+        // commentCard[index].insertBefore(cardCommentInputReplyDiv, commentCard[index].nextSibling);
+    }
     activeComment[index].appendChild(cardCommentInputReplyDiv);
-    
 }
