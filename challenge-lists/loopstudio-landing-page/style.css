@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+:root {
+    --mobile-width: 375px;
+    --max-width-wrapper: 1440px;
+
+    --white: #ffffff;
+    --black: #000000;
+    --dark-gray: #8c8c8c;
+    --very-dark-gray: #696969;
+
+    --regular-font-size: 15px;
+
+    --light-font-weight: 300;
+    --regular-font-weight: 400;
+
+    --regular-font-family: 'Alata', sans-serif;
+    --special-font-family: 'Josefin Sans', sans-serif;
+}
+
+* {
+    font-family: var(--regular-font-family);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
