@@ -251,6 +251,16 @@ const challengeList = [{
     //     frontendLink: "https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9",
     //     repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/interactive-comments-section"
     // }
+    , {
+    name: "Product Preview Card Component",
+    description: "This HTML & CSS-only challenge will be perfect for anyone starting to build responsive projects.",
+    tags: ["Newbie", "HTML", "CSS"],
+    image: "assets/thumbnails/product-preview-card.png",
+    liveLink: "challenge-lists/product-preview-card/index.html",
+    boxShadow: "#f9eddfc7",
+    frontendLink: "https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa",
+    repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/product-preview-card"
+}
     // , {
     //     name: "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
     //     description: "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
