@@ -267,7 +267,7 @@ const challengeList = [{
     tags: ["Junior", "HTML", "CSS", "JS"],
     image: "assets/thumbnails/loopstudio-landing-page.png",
     liveLink: "challenge-lists/loopstudio-landing-page/index.html",
-    boxShadow: "#00000035",
+    boxShadow: "#972f9559",
     frontendLink: "https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw",
     repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/loopstudio-landing-page"
 }
