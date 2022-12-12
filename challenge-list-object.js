@@ -261,6 +261,16 @@ const challengeList = [{
     frontendLink: "https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa",
     repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/product-preview-card"
 }
+    , {
+    name: "Loopstudio Landing Page",
+    description: "This challenge is perfect if you're looking to test your CSS Grid chops. Even without Grid, this project will be a fun one to help you practice your layout skills!",
+    tags: ["Junior", "HTML", "CSS", "JS"],
+    image: "assets/thumbnails/loopstudio-landing-page.png",
+    liveLink: "challenge-lists/loopstudio-landing-page/index.html",
+    boxShadow: "#00000035",
+    frontendLink: "https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw",
+    repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/loopstudio-landing-page"
+}
     // , {
     //     name: "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
     //     description: "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
