@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
 
   <title>Frontend Mentor | Multi-step form</title>
@@ -17,7 +17,7 @@
     <div class="form-container">
       <div class="form-slidebar">
         <div class="slidebar-steps-list">
-          <div class="step-item">
+          <div class="step-item active-step">
             <div class="step-number">1</div>
             <div class="step-details">
               <h4 class="step-label">Step 1</h4>
@@ -64,184 +64,183 @@
         </div>
         <form class="form-body">
           <!-- Step 1 -->
-          <div class="form-step-container">
+          <div class="form-step-container active-step">
             <div class="form-group-info">
               <div class="form-name">
                 <label class="form-label-info" for="name">Name</label>
-                <!-- <p class="form-error-message">This field is required</p> -->
+                <p class="form-error-message">This field is required</p>
               </div>
-              <input type="text" id="name" name="name" placeholder="e.g. Stephen King">
+              <input class="form-input-info" type="text" id="name" name="info" placeholder="e.g. Stephen King">
             </div>
             <div class="form-group-info">
               <div class="form-name">
-                <label class="form-label-info" for="name">Email Address</label>
-                <!-- <p class="form-error-message">This field is required</p> -->
+                <label class="form-label-info" for="email">Email Address</label>
+                <p class="form-error-message">This field is required</p>
               </div>
-              <input type="text" id="name" name="name" placeholder="e.g. stephenking@lorem.com">
+              <input class="form-input-info" type="text" id="email" name="info"
+                placeholder="e.g. stephenking@lorem.com">
             </div>
             <div class="form-group-info">
               <div class="form-name">
-                <label class="form-label-info" for="name">Phone Number</label>
-                <!-- <p class="form-error-message">This field is required</p> -->
+                <label class="form-label-info" for="number">Phone Number</label>
+                <p class="form-error-message">This field is required</p>
               </div>
-              <input type="text" id="name" name="name" placeholder="e.g. +1 234 567 890">
+              <input class="form-input-info" type="text" id="number" name="info" placeholder="e.g. +1 234 567 890">
             </div>
           </div>
           <!-- Step 1 End -->
           <!-- Step 2 -->
-          <!-- <div class="form-step-container">
-            <div class="form-group-radio">
-              <input class="form-radio" type="radio" id="arcade" name="arcade">
-              <label class="form-label-radio" for="arcade">
-                <div class="form-radio-icon">
-                  <img src="assets/images/icon-arcade.svg" alt="Radio Icon">
-                </div>
-                <div class="form-radio-details">
-                  <h4 class="radio-name">Arcade</h4>
-                  <p class="radio-price">$<span class="price">9</span>/<span class="price-date">mo</span></p>
-                  <p class="discount-message">2 months free</p>
-                </div>
-              </label>
-            </div>
-            <div class="form-group-radio">
-              <input class="form-radio" type="radio" id="advanced" name="advanced">
-              <label class="form-label-radio" for="advanced">
-                <div class="form-radio-icon">
-                  <img src="assets/images/icon-advanced.svg" alt="Radio Icon">
-                </div>
-                <div class="form-radio-details">
-                  <h4 class="radio-name">Advanced</h4>
-                  <p class="radio-price">$<span class="price">12</span>/<span class="price-date">mo</span></p>
-                  <p class="discount-message">2 months free</p>
-                </div>
-              </label>
-            </div>
-            <div class="form-group-radio">
-              <input class="form-radio" type="radio" id="pro" name="pro">
-              <label class="form-label-radio" for="pro">
-                <div class="form-radio-icon">
-                  <img src="assets/images/icon-pro.svg" alt="Radio Icon">
-                </div>
-                <div class="form-radio-details">
-                  <h4 class="radio-name">Pro</h4>
-                  <p class="radio-price">$<span class="price">15</span>/<span class="price-date">mo</span></p>
-                  <p class="discount-message">2 months free</p>
-                </div>
-              </label>
+          <div class="form-step-container">
+            <div class="radio-step">
+              <div class="form-group-radio checked-radio">
+                <input class="form-radio" type="radio" id="arcade" name="plan" checked>
+                <label class="form-label-radio" for="arcade">
+                  <div class="form-radio-icon">
+                    <img src="assets/images/icon-arcade.svg" alt="Radio Icon">
+                  </div>
+                  <div class="form-radio-details">
+                    <h4 class="radio-name">Arcade</h4>
+                    <p class="radio-price">$<span class="price">9</span>/<span class="price-date">mo</span></p>
+                    <!-- <p class="discount-message">2 months free</p> -->
+                  </div>
+                </label>
+              </div>
+              <div class="form-group-radio">
+                <input class="form-radio" type="radio" id="advanced" name="plan">
+                <label class="form-label-radio" for="advanced">
+                  <div class="form-radio-icon">
+                    <img src="assets/images/icon-advanced.svg" alt="Radio Icon">
+                  </div>
+                  <div class="form-radio-details">
+                    <h4 class="radio-name">Advanced</h4>
+                    <p class="radio-price">$<span class="price">12</span>/<span class="price-date">mo</span></p>
+                    <!-- <p class="discount-message">2 months free</p> -->
+                  </div>
+                </label>
+              </div>
+              <div class="form-group-radio">
+                <input class="form-radio" type="radio" id="pro" name="plan">
+                <label class="form-label-radio" for="pro">
+                  <div class="form-radio-icon">
+                    <img src="assets/images/icon-pro.svg" alt="Radio Icon">
+                  </div>
+                  <div class="form-radio-details">
+                    <h4 class="radio-name">Pro</h4>
+                    <p class="radio-price">$<span class="price">15</span>/<span class="price-date">mo</span></p>
+                    <!-- <p class="discount-message">2 months free</p> -->
+                  </div>
+                </label>
+              </div>
             </div>
             <div class="form-group-switch">
               <input class="form-switch" type="checkbox" id="timeline" name="timeline">
               <label class="form-label-switch" for="timeline">
-                <p class="switch-name">Monthly</p>
-                <span class="switch-flick">-</span>
+                <p class="switch-name chosen-switch">Monthly</p>
+                <span class="switch-flick"></span>
                 <p class="switch-name">Yearly</p>
               </label>
             </div>
-          </div> -->
+          </div>
           <!-- Step 2 End -->
           <!-- Step 3 -->
-          <!-- <div class="form-step-container">
+          <div class="form-step-container">
             <div class="form-group-checkbox">
-              <input class="form-checkbox" type="checkbox" id="online" name="online">
+              <input class="form-checkbox" type="checkbox" id="online" name="service">
               <label class="form-label-checkbox" for="online">
-                <span class="custom-checkbox">-</span>
+                <span class="custom-checkbox"></span>
                 <div class="checkbox-details">
                   <div class="checkbox-desc">
                     <p class="desc-name">Online service</p>
                     <p class="desc-details">Access to multiplayer games</p>
                   </div>
-                  <p class="checkbox-price">+$
-                    <span class="checkbox-price-amount">1</span>
-                    /
-                    <span class="checkbox-price-date">mo</span>
+                  <p class="checkbox-price">+$<span class="checkbox-price-amount">1</span>/<span
+                      class="checkbox-price-date">mo</span>
                   </p>
                 </div>
               </label>
             </div>
             <div class="form-group-checkbox">
-              <input class="form-checkbox" type="checkbox" id="storage" name="storage">
+              <input class="form-checkbox" type="checkbox" id="storage" name="service">
               <label class="form-label-checkbox" for="storage">
-                <span class="custom-checkbox">-</span>
+                <span class="custom-checkbox"></span>
                 <div class="checkbox-details">
                   <div class="checkbox-desc">
                     <p class="desc-name">Larger storage</p>
                     <p class="desc-details">Extra 1TB of cloud save</p>
                   </div>
-                  <p class="checkbox-price">+$
-                    <span class="checkbox-price-amount">2</span>
-                    /
-                    <span class="checkbox-price-date">mo</span>
+                  <p class="checkbox-price">+$<span class="checkbox-price-amount">2</span>/<span
+                      class="checkbox-price-date">mo</span>
                   </p>
                 </div>
               </label>
             </div>
             <div class="form-group-checkbox">
-              <input class="form-checkbox" type="checkbox" id="custom" name="custom">
+              <input class="form-checkbox" type="checkbox" id="custom" name="service">
               <label class="form-label-checkbox" for="custom">
-                <span class="custom-checkbox">-</span>
+                <span class="custom-checkbox"></span>
                 <div class="checkbox-details">
                   <div class="checkbox-desc">
                     <p class="desc-name">Customizable Profile</p>
                     <p class="desc-details">Custom theme on your profile</p>
                   </div>
-                  <p class="checkbox-price">+$
-                    <span class="checkbox-price-amount">2</span>
-                    /
-                    <span class="checkbox-price-date">mo</span>
+                  <p class="checkbox-price">+$<span class="checkbox-price-amount">2</span>/<span
+                      class="checkbox-price-date">mo</span>
                   </p>
                 </div>
               </label>
             </div>
-          </div> -->
+          </div>
           <!-- Step 3 End -->
           <!-- Step 4 -->
-          <!-- <div class="form-step-container">
+          <div class="form-step-container">
             <div class="summary-content">
               <div class="summary-card">
                 <div class="summary-details">
-                  <p class="summary-name">Arcade (<span class="summary-timeline">Yearly</span>)</p>
+                  <p class="summary-name">Arcade (<span class="summary-timeline">Monthly</span>)</p>
                   <button class="summary-changer-button">Change</button>
                 </div>
-                <p class="summary-service-price">$
-                  <span class="service-price">90</span>
-                  /
-                  <span class="service-price-timeline">yr</span>
+                <p class="summary-service-price">$<span class="service-price">9</span>/<span
+                    class="service-price-timeline">mo</span>
                 </p>
               </div>
               <div class="summary-addon-card">
                 <div class="summary-details">
-                  <p class="summary-addon">Online Service</p>
+                  <p class="summary-addon">Online service</p>
                 </div>
-                <p class="summary-service-price">+$
-                  <span class="service-price">10</span>
-                  /
-                  <span class="service-price-timeline">yr</span>
+                <p class="summary-addon-price">+$<span class="addon-price">1</span>/<span
+                    class="addon-price-timeline">mo</span>
+                </p>
+              </div>
+              <div class="summary-addon-card">
+                <div class="summary-details">
+                  <p class="summary-addon">Online service</p>
+                </div>
+                <p class="summary-addon-price">+$<span class="addon-price">1</span>/<span
+                    class="addon-price-timeline">mo</span>
                 </p>
               </div>
             </div>
             <div class="overall-total">
-              <p class="total-label">Total (per <span class="total-timeline">year</span>)</p>
-              <p class="total-price">$
-                <span class="total-price-amount">120</span>
-                /
-                <span class="total-price-timeline">yr</span>
+              <p class="total-label">Total (per <span class="total-timeline">month</span>)</p>
+              <p class="total-price">+$<span class="total-price-amount">12</span>/<span
+                  class="total-price-timeline">mo</span>
               </p>
             </div>
-          </div> -->
+          </div>
           <!-- Step 4 End -->
-          <div class="form-buttons">
-            <button class="back-button">Go Back</button>
-            <button class="next-button">Next Step</button>
+          <div class="form-button-container">
+            <button type='button' class="form-button back">Go Back</button>
+            <button type='button' class="form-button next">Next Step</button>
           </div>
         </form>
         <!-- Final Step -->
-        <!-- <div class="final-step">
+        <div class="final-step">
           <img src="assets/images/icon-thank-you.svg" alt="Check Icon">
           <h1 class="final-title">Thank you!</h1>
           <p class="final-body">Thanks for confirming your subscription! We hope you have fun
             using our platform. If you ever need support, please feel free
             to email us at support@loremgaming.com.</p>
-        </div> -->
+        </div>
         <!-- Final Step End -->
       </div>
     </div>
