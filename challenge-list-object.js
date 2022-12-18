@@ -271,6 +271,16 @@ const challengeList = [{
     frontendLink: "https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw",
     repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/loopstudio-landing-page"
 }
+    , {
+    name: "Multi-step Form",
+    description: "An excellent test for your form-building and JS skills, this project will pose many challenges along the way to completion.",
+    tags: ["Intermediate", "HTML", "CSS", "JS"],
+    image: "assets/thumbnails/multi-step-form.png",
+    liveLink: "challenge-lists/multi-step-form/index.html",
+    boxShadow: "#deebffcf",
+    frontendLink: "https://www.frontendmentor.io/challenges/multistep-form-YVAnSdqQBJ",
+    repositoryLink: "https://github.com/east2k/project-manager/tree/main/challenge-lists/multi-step-form"
+}
     // , {
     //     name: "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
     //     description: "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
