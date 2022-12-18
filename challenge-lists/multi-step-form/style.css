@@ -192,9 +192,6 @@ body {
 }
 
 .form-button-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     width: 100%;
 }
 
@@ -210,9 +207,15 @@ body {
 }
 
 .form-button.back {
+    display: none;
+    float: left;
     color: var(--cool-gray);
     font-weight: var(--bold-font-weight);
     background-color: transparent;
+}
+
+.form-button.back.show {
+    display: block;
 }
 
 .form-button.back:hover {
@@ -220,8 +223,17 @@ body {
 }
 
 .form-button.next {
+    float: right;
     color: var(--white);
     background-color: var(--marine-blue);
+}
+
+.form-button.next.confirm {
+    background-color: var(--purplish-blue);
+}
+
+.form-button.next:hover {
+    background-color: #174a8b;
 }
 
 /* Step 1 End */
@@ -267,7 +279,19 @@ body {
     margin-bottom: 7px;
 }
 
-.radio-price {
+.discount-message {
+    display: none;
+    color: var(--marine-blue);
+    margin-top: 7px;
+    font-size: 13px;
+    font-weight: var(--bold-font-weight);
+}
+
+.discount-message.show {
+    display: block;
+}
+
+.radio-price-container {
     color: var(--cool-gray);
     font-size: 14px;
 }
@@ -306,17 +330,21 @@ body {
     background-color: var(--marine-blue);
 }
 
+.switch-flick.flicked::before {
+    left: 22px !important;
+}
+
 .switch-flick::before {
     position: absolute;
     top: 50%;
     left: 5px;
-    right: 5px;
     transform: translateY(-50%);
     content: '';
     border-radius: 50%;
     background-color: var(--white);
     width: 12px;
     height: 12px;
+    transition: 0.5s;
 }
 
 .switch-name {
@@ -453,6 +481,10 @@ body {
     font-size: 14px;
     background-color: transparent;
     text-decoration: underline;
+}
+
+.summary-changer-button:hover {
+    color: var(--purplish-blue);
 }
 
 .summary-addon-card {
