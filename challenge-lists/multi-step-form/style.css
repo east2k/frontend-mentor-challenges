@@ -106,6 +106,7 @@ body {
 .step-item.active-step .step-number {
     color: #000;
     background-color: var(--light-blue);
+    border: none;
 }
 
 .form-content {
@@ -559,3 +560,192 @@ body {
 }
 
 /* Step 5 End */
+
+@media only screen and (max-width: 968px) {
+    body {
+        background-color: var(--white);
+    }
+
+    .page-wrapper {
+        background-color: #eef5ff;
+        padding-bottom: 30px;
+    }
+
+    .form-container {
+        width: 92%;
+        margin: auto;
+        margin-top: 100px;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .form-slidebar {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        border-radius: 0;
+        background-image: url(assets/images/bg-sidebar-mobile.svg);
+        height: 170px;
+    }
+
+    .slidebar-steps-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px;
+        gap: 15px;
+    }
+
+    .step-number {
+        font-weight: var(--bold-font-weight);
+        margin: 0;
+    }
+
+    .step-details {
+        display: none;
+    }
+
+    .form-content {
+        width: 100%;
+        padding: 30px 25px;
+        background-color: var(--white);
+        border-radius: 10px;
+    }
+
+    .form-content.done {
+        padding: 80px 25px;
+    }
+
+    .form-step-container {
+        height: auto;
+    }
+
+    .form-header {
+        margin-bottom: 20px;
+    }
+
+    .form-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .form-description {
+        font-size: 16px;
+        font-weight: var(--regular-font-weight);
+        line-height: 25px;
+        letter-spacing: 0px;
+        white-space: pre-wrap;
+    }
+
+    .form-group-info {
+        margin-bottom: 15px;
+        font-size: 12px;
+    }
+
+    .form-input-info {
+        padding: 10px 15px;
+        font-size: 15px;
+        border-radius: 5px;
+        font-weight: var(--medium-font-weight);
+    }
+
+    .form-button-container {
+        position: absolute;
+        left: 0;
+        bottom: -105px;
+        height: 60px;
+    }
+
+    .form-button {
+        width: 100px;
+        height: 42px;
+        font-size: 14px;
+    }
+
+    .radio-step {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 22px;
+    }
+
+    .form-group-radio {
+        width: 100%;
+    }
+
+    .form-label-radio {
+        display: flex;
+    }
+
+    .form-radio-icon {
+        margin-right: 15px;
+        margin-bottom: 0;
+    }
+
+    .discount-message {
+        font-weight: var(--medium-font-weight);
+    }
+
+    .form-label-switch {
+        width: 65%;
+        padding-left: 15px;
+    }
+
+    .form-label-checkbox {
+        gap: 15px;
+        padding: 13px 15px;
+        margin-bottom: 12px;
+    }
+
+    .desc-name {
+        font-size: 14px;
+    }
+
+    .desc-details {
+        font-size: 12px;
+    }
+
+    .checkbox-price {
+        font-size: 12px;
+    }
+
+    .summary-card {
+        padding-bottom: 15px;
+    }
+
+    .summary-content {
+        padding: 20px 15px 10px;
+    }
+
+    .summary-name {
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+
+    .summary-service-price {
+        font-size: 14px;
+    }
+
+    .overall-total {
+        padding: 0 15px;
+    }
+
+    .total-price {
+        font-size: 16px;
+    }
+
+    .final-step {
+        padding-bottom: 0;
+    }
+
+    .final-step img {
+        width: 55px;
+    }
+
+    .final-title {
+        font-size: 24px;
+        margin-bottom: -15px;
+    }
+
+}
